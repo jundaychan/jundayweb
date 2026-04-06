@@ -34,6 +34,14 @@ export default defineConfig({
           { text: '模型对比', link: '/models/comparison' },
         ],
       },
+      {
+        text: '国外AI方法论',
+        items: [
+          { text: '概览', link: '/insights/index' },
+          { text: 'Anthropic 系列', link: '/insights/anthropic' },
+          { text: 'OpenAI 系列', link: '/insights/openai' },
+        ],
+      },
       { text: '关于', link: '/about' },
     ],
 
@@ -110,6 +118,16 @@ export default defineConfig({
             { text: '音频生成', link: '/models/audio' },
             { text: '视频生成', link: '/models/video' },
             { text: '模型对比', link: '/models/comparison' },
+          ],
+        },
+      ],
+      '/insights/': [
+        {
+          text: '国外AI方法论',
+          items: [
+            { text: '概览', link: '/insights/index' },
+            { text: 'Anthropic 系列', link: '/insights/anthropic' },
+            { text: 'OpenAI 系列', link: '/insights/openai' },
           ],
         },
       ],
