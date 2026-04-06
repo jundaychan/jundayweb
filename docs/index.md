@@ -21,26 +21,26 @@ features:
     details: "Klarna用AI砍掉40%人力，收入翻倍。电商商家用AI出图成本从万元降到3毛。你还在观望？"
     link: /ai-landing/cases
     linkText: 看真实案例
-  - title: "不懂AI，至少要懂这100个概念"
-    details: "不是字典，是老板视角的AI认知体系。每个概念都告诉你：这跟你赚钱有什么关系。"
-    link: /ai100/index
-    linkText: 开始建立认知
+  - title: "哪个AI工具好用？实测告诉你"
+    details: "豆包、通义千问、Kimi、即梦、可灵……真实价格、中国能不能用、适合什么场景，一张表看清。"
+    link: /tools/index
+    linkText: 看工具对比
   - title: "电商老板的AI提效全攻略"
     details: "出图成本降99%、5秒出片、一品多链接裂变。基于实战课程的全链路方法论。"
     link: /ecommerce/index
     linkText: 看电商实战
-  - title: "Agent到底是什么？别被忽悠了"
-    details: "Anthropic总结的5种Agent模式，OpenAI Operator真实成功率只有38%。先搞懂再投入。"
-    link: /ai-landing/agents
-    linkText: 搞懂Agent
-  - title: "选错模型就是白花钱"
-    details: "GPT、Claude、Gemini、豆包，81%的大企业同时用3个以上模型。怎么选？看这篇就够了。"
-    link: /ai-landing/llm
-    linkText: 看选型指南
-  - title: "AI编程100概念"
-    details: "不是教你写代码，是让你听懂技术团队在说什么、判断他们说的靠不靠谱。"
-    link: /aicode100/index
-    linkText: 提升技术判断力
+  - title: "提示词直接抄作业"
+    details: "来自GitHub 143K Star的顶级开源项目，翻译成中文。商业角色、万能模板、工程技巧，复制粘贴就能用。"
+    link: /prompts/index
+    linkText: 拿提示词模板
+  - title: "不懂AI，至少要懂这100个概念"
+    details: "不是字典，是老板视角的AI认知体系。每个概念都告诉你：这跟你赚钱有什么关系。"
+    link: /ai100/index
+    linkText: 开始建立认知
+  - title: "60%的企业投了AI没回报，为什么？"
+    details: "BCG 2025年数据。不是AI没用，是用法不对。看看成功的企业做对了什么，失败的踩了哪些坑。"
+    link: /ai-landing/pitfalls
+    linkText: 避开大坑
 ---
 
 <style>
@@ -222,15 +222,15 @@ features:
 ## 推荐阅读路径
 
 <div class="roadmap">
-  <div class="step"><span class="num">1</span> <a href="/ai100/foundational">先建认知</a></div>
+  <div class="step"><span class="num">1</span> <a href="/guide/what-is-ai">先建认知</a></div>
   <span class="arrow">→</span>
-  <div class="step"><span class="num">2</span> <a href="/ai-landing/cases">看真实案例</a></div>
+  <div class="step"><span class="num">2</span> <a href="/tools/index">选对工具</a></div>
   <span class="arrow">→</span>
-  <div class="step"><span class="num">3</span> <a href="/ai-landing/agents">搞懂Agent</a></div>
+  <div class="step"><span class="num">3</span> <a href="/prompts/index">拿提示词模板</a></div>
   <span class="arrow">→</span>
-  <div class="step"><span class="num">4</span> <a href="/ai-landing/llm">选对模型</a></div>
+  <div class="step"><span class="num">4</span> <a href="/ai-landing/cases">看真实案例</a></div>
   <span class="arrow">→</span>
-  <div class="step"><span class="num">5</span> <a href="/ai-landing/pitfalls">避开大坑</a></div>
+  <div class="step"><span class="num">5</span> <a href="/faq">看常见问题</a></div>
 </div>
 
 ## 关于我
