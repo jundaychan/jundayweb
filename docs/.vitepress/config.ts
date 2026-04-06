@@ -13,9 +13,19 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '入门指南', link: '/guide/what-is-ai' },
-      { text: '核心概念', link: '/concepts/llm' },
-      { text: '实践应用', link: '/practice/scenarios' },
+      {
+        text: 'AI入门必读',
+        items: [
+          { text: '什么是 AI', link: '/guide/what-is-ai' },
+          { text: '为什么企业需要关注 AI', link: '/guide/why-ai-matters' },
+          { text: '如何开始 AI 转型', link: '/guide/getting-started' },
+          { text: '大语言模型', link: '/concepts/llm' },
+          { text: '提示工程', link: '/concepts/prompt-engineering' },
+          { text: 'AI Agent', link: '/concepts/agents' },
+          { text: '企业应用场景', link: '/practice/scenarios' },
+          { text: '推荐工具', link: '/practice/tools' },
+        ],
+      },
       {
         text: '100概念系列',
         items: [
@@ -48,15 +58,13 @@ export default defineConfig({
     sidebar: {
       '/guide/': [
         {
-          text: 'AI 入门指南',
+          text: '入门指南',
           items: [
             { text: '什么是 AI', link: '/guide/what-is-ai' },
             { text: '为什么企业需要关注 AI', link: '/guide/why-ai-matters' },
             { text: '如何开始 AI 转型', link: '/guide/getting-started' },
           ],
         },
-      ],
-      '/concepts/': [
         {
           text: '核心概念',
           items: [
@@ -65,8 +73,56 @@ export default defineConfig({
             { text: 'AI Agent', link: '/concepts/agents' },
           ],
         },
+        {
+          text: '实践应用',
+          items: [
+            { text: '企业应用场景', link: '/practice/scenarios' },
+            { text: '推荐工具', link: '/practice/tools' },
+          ],
+        },
+      ],
+      '/concepts/': [
+        {
+          text: '入门指南',
+          items: [
+            { text: '什么是 AI', link: '/guide/what-is-ai' },
+            { text: '为什么企业需要关注 AI', link: '/guide/why-ai-matters' },
+            { text: '如何开始 AI 转型', link: '/guide/getting-started' },
+          ],
+        },
+        {
+          text: '核心概念',
+          items: [
+            { text: '大语言模型', link: '/concepts/llm' },
+            { text: '提示工程', link: '/concepts/prompt-engineering' },
+            { text: 'AI Agent', link: '/concepts/agents' },
+          ],
+        },
+        {
+          text: '实践应用',
+          items: [
+            { text: '企业应用场景', link: '/practice/scenarios' },
+            { text: '推荐工具', link: '/practice/tools' },
+          ],
+        },
       ],
       '/practice/': [
+        {
+          text: '入门指南',
+          items: [
+            { text: '什么是 AI', link: '/guide/what-is-ai' },
+            { text: '为什么企业需要关注 AI', link: '/guide/why-ai-matters' },
+            { text: '如何开始 AI 转型', link: '/guide/getting-started' },
+          ],
+        },
+        {
+          text: '核心概念',
+          items: [
+            { text: '大语言模型', link: '/concepts/llm' },
+            { text: '提示工程', link: '/concepts/prompt-engineering' },
+            { text: 'AI Agent', link: '/concepts/agents' },
+          ],
+        },
         {
           text: '实践应用',
           items: [
