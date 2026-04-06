@@ -45,6 +45,16 @@ export default defineConfig({
         ],
       },
       {
+        text: '电商AI实战',
+        items: [
+          { text: '概览', link: '/ecommerce/index' },
+          { text: 'AI作图革命', link: '/ecommerce/ai-image' },
+          { text: '生图实操框架', link: '/ecommerce/image-framework' },
+          { text: '爆款裂变与获客', link: '/ecommerce/growth' },
+          { text: '组织管理与智能体', link: '/ecommerce/management' },
+        ],
+      },
+      {
         text: '国外AI方法论',
         items: [
           { text: '概览', link: '/insights/index' },
@@ -184,6 +194,18 @@ export default defineConfig({
             { text: '概览', link: '/insights/index' },
             { text: 'Anthropic 系列', link: '/insights/anthropic' },
             { text: 'OpenAI 系列', link: '/insights/openai' },
+          ],
+        },
+      ],
+      '/ecommerce/': [
+        {
+          text: '电商AI实战',
+          items: [
+            { text: '概览', link: '/ecommerce/index' },
+            { text: 'AI作图革命', link: '/ecommerce/ai-image' },
+            { text: '生图实操框架', link: '/ecommerce/image-framework' },
+            { text: '爆款裂变与获客', link: '/ecommerce/growth' },
+            { text: '组织管理与智能体', link: '/ecommerce/management' },
           ],
         },
       ],
