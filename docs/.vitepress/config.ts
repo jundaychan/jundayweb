@@ -65,6 +65,16 @@ export default defineConfig({
           { text: '避坑篇', link: '/ai-landing/pitfalls' },
         ],
       },
+      {
+        text: '提示词模板库',
+        items: [
+          { text: '概览', link: '/prompts/index' },
+          { text: '电商运营', link: '/prompts/ecommerce' },
+          { text: '营销文案', link: '/prompts/marketing' },
+          { text: '经营管理', link: '/prompts/management' },
+          { text: '数据分析', link: '/prompts/analysis' },
+        ],
+      },
       { text: '关于', link: '/about' },
     ],
 
@@ -212,6 +222,18 @@ export default defineConfig({
             { text: '生图实操框架', link: '/ecommerce/image-framework' },
             { text: '爆款裂变与获客', link: '/ecommerce/growth' },
             { text: '组织管理与智能体', link: '/ecommerce/management' },
+          ],
+        },
+      ],
+      '/prompts/': [
+        {
+          text: '提示词模板库',
+          items: [
+            { text: '概览', link: '/prompts/index' },
+            { text: '电商运营', link: '/prompts/ecommerce' },
+            { text: '营销文案', link: '/prompts/marketing' },
+            { text: '经营管理', link: '/prompts/management' },
+            { text: '数据分析', link: '/prompts/analysis' },
           ],
         },
       ],
