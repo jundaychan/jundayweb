@@ -16,8 +16,24 @@ export default defineConfig({
       { text: '入门指南', link: '/guide/what-is-ai' },
       { text: '核心概念', link: '/concepts/llm' },
       { text: '实践应用', link: '/practice/scenarios' },
-      { text: 'AI 100概念', link: '/ai100/index' },
-      { text: 'AI编程100概念', link: '/aicode100/index' },
+      {
+        text: '100概念系列',
+        items: [
+          { text: 'AI 100概念', link: '/ai100/index' },
+          { text: 'AI编程 100概念', link: '/aicode100/index' },
+        ],
+      },
+      {
+        text: '模型选择指南',
+        items: [
+          { text: '概览', link: '/models/index' },
+          { text: '文字文案', link: '/models/text' },
+          { text: '图片生成', link: '/models/image' },
+          { text: '音频生成', link: '/models/audio' },
+          { text: '视频生成', link: '/models/video' },
+          { text: '模型对比', link: '/models/comparison' },
+        ],
+      },
       { text: '关于', link: '/about' },
     ],
 
@@ -81,6 +97,19 @@ export default defineConfig({
             { text: '部署与运维', link: '/aicode100/deployment' },
             { text: '安全与最佳实践', link: '/aicode100/security' },
             { text: '前沿概念与趋势', link: '/aicode100/cutting-edge' },
+          ],
+        },
+      ],
+      '/models/': [
+        {
+          text: '模型选择指南',
+          items: [
+            { text: '概览', link: '/models/index' },
+            { text: '文字文案', link: '/models/text' },
+            { text: '图片生成', link: '/models/image' },
+            { text: '音频生成', link: '/models/audio' },
+            { text: '视频生成', link: '/models/video' },
+            { text: '模型对比', link: '/models/comparison' },
           ],
         },
       ],
