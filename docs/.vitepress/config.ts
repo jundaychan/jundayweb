@@ -74,6 +74,17 @@ export default defineConfig({
           { text: '提示词工程技巧', link: '/prompts/techniques' },
         ],
       },
+      {
+        text: 'AI工具实测',
+        items: [
+          { text: '概览', link: '/tools/index' },
+          { text: '文字AI工具', link: '/tools/writing' },
+          { text: 'AI作图工具', link: '/tools/image' },
+          { text: 'AI视频工具', link: '/tools/video' },
+          { text: 'AI客服工具', link: '/tools/service' },
+        ],
+      },
+      { text: '常见问题', link: '/faq' },
       { text: '关于', link: '/about' },
     ],
 
@@ -232,6 +243,18 @@ export default defineConfig({
             { text: '商业决策角色', link: '/prompts/business' },
             { text: '万能角色扮演', link: '/prompts/roles' },
             { text: '提示词工程技巧', link: '/prompts/techniques' },
+          ],
+        },
+      ],
+      '/tools/': [
+        {
+          text: 'AI工具实测',
+          items: [
+            { text: '概览', link: '/tools/index' },
+            { text: '文字AI工具', link: '/tools/writing' },
+            { text: 'AI作图工具', link: '/tools/image' },
+            { text: 'AI视频工具', link: '/tools/video' },
+            { text: 'AI客服工具', link: '/tools/service' },
           ],
         },
       ],
