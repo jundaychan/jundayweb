@@ -16,6 +16,8 @@ export default defineConfig({
       { text: '入门指南', link: '/guide/what-is-ai' },
       { text: '核心概念', link: '/concepts/llm' },
       { text: '实践应用', link: '/practice/scenarios' },
+      { text: 'AI 100概念', link: '/ai100/index' },
+      { text: 'AI编程100概念', link: '/aicode100/index' },
       { text: '关于', link: '/about' },
     ],
 
@@ -49,6 +51,39 @@ export default defineConfig({
           ],
         },
       ],
+      '/ai100/': [
+        {
+          text: '创始人必懂的100个AI概念',
+          items: [
+            { text: '概览', link: '/ai100/index' },
+            { text: '基础概念', link: '/ai100/foundational' },
+            { text: '模型与技术', link: '/ai100/models' },
+            { text: 'AI应用与产品', link: '/ai100/applications' },
+            { text: '商业与战略', link: '/ai100/business' },
+            { text: '数据相关', link: '/ai100/data' },
+            { text: '模型能力与评估', link: '/ai100/evaluation' },
+            { text: '安全、伦理与治理', link: '/ai100/safety' },
+            { text: '行业热词与趋势', link: '/ai100/trends' },
+          ],
+        },
+      ],
+      '/aicode100/': [
+        {
+          text: 'AI编程必懂的100个概念',
+          items: [
+            { text: '概览', link: '/aicode100/index' },
+            { text: '编程基础概念', link: '/aicode100/basics' },
+            { text: 'AI核心概念', link: '/aicode100/ai-core' },
+            { text: 'AI编程工具', link: '/aicode100/tools' },
+            { text: '提示工程与AI编程', link: '/aicode100/prompting' },
+            { text: '开发流程与协作', link: '/aicode100/workflow' },
+            { text: 'AI编程框架与平台', link: '/aicode100/frameworks' },
+            { text: '部署与运维', link: '/aicode100/deployment' },
+            { text: '安全与最佳实践', link: '/aicode100/security' },
+            { text: '前沿概念与趋势', link: '/aicode100/cutting-edge' },
+          ],
+        },
+      ],
     },
 
     search: {
@@ -76,6 +111,11 @@ export default defineConfig({
 
     lastUpdated: {
       text: '最后更新于',
+    },
+
+    footer: {
+      message: '微信交流：592146145',
+      copyright: 'Copyright © 2024-present Junday',
     },
 
     returnToTopLabel: '回到顶部',
