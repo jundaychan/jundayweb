@@ -14,74 +14,88 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       {
-        text: 'AI入门必读',
+        text: '学AI',
         items: [
-          { text: '什么是 AI', link: '/guide/what-is-ai' },
-          { text: '为什么企业需要关注 AI', link: '/guide/why-ai-matters' },
-          { text: '如何开始 AI 转型', link: '/guide/getting-started' },
-          { text: '大语言模型', link: '/concepts/llm' },
-          { text: '提示工程', link: '/concepts/prompt-engineering' },
-          { text: 'AI Agent', link: '/concepts/agents' },
-          { text: '企业应用场景', link: '/practice/scenarios' },
-          { text: '推荐工具', link: '/practice/tools' },
+          {
+            text: '入门指南',
+            items: [
+              { text: '什么是 AI', link: '/guide/what-is-ai' },
+              { text: '为什么企业需要关注 AI', link: '/guide/why-ai-matters' },
+              { text: '如何开始 AI 转型', link: '/guide/getting-started' },
+            ],
+          },
+          {
+            text: '核心概念',
+            items: [
+              { text: '大语言模型', link: '/concepts/llm' },
+              { text: '提示工程', link: '/concepts/prompt-engineering' },
+              { text: 'AI Agent', link: '/concepts/agents' },
+            ],
+          },
+          {
+            text: '100概念速查',
+            items: [
+              { text: 'AI 100概念', link: '/ai100/index' },
+              { text: 'AI编程 100概念', link: '/aicode100/index' },
+            ],
+          },
         ],
       },
       {
-        text: '100概念系列',
+        text: '用AI',
         items: [
-          { text: 'AI 100概念', link: '/ai100/index' },
-          { text: 'AI编程 100概念', link: '/aicode100/index' },
+          {
+            text: 'AI工具实测',
+            items: [
+              { text: '工具对比总览', link: '/tools/index' },
+              { text: '文字AI工具', link: '/tools/writing' },
+              { text: 'AI作图工具', link: '/tools/image' },
+              { text: 'AI视频工具', link: '/tools/video' },
+              { text: 'AI客服工具', link: '/tools/service' },
+            ],
+          },
+          {
+            text: '提示词模板库',
+            items: [
+              { text: '模板库概览', link: '/prompts/index' },
+              { text: '商业决策角色', link: '/prompts/business' },
+              { text: '万能角色扮演', link: '/prompts/roles' },
+              { text: '提示词工程技巧', link: '/prompts/techniques' },
+            ],
+          },
+          {
+            text: '模型选择',
+            items: [
+              { text: '模型选择指南', link: '/models/index' },
+              { text: '模型对比', link: '/models/comparison' },
+            ],
+          },
         ],
       },
       {
-        text: '模型选择指南',
+        text: 'AI实战',
         items: [
-          { text: '概览', link: '/models/index' },
-          { text: '文字文案', link: '/models/text' },
-          { text: '图片生成', link: '/models/image' },
-          { text: '音频生成', link: '/models/audio' },
-          { text: '视频生成', link: '/models/video' },
-          { text: '模型对比', link: '/models/comparison' },
-        ],
-      },
-      {
-        text: '电商AI实战',
-        items: [
-          { text: '概览', link: '/ecommerce/index' },
-          { text: 'AI作图革命', link: '/ecommerce/ai-image' },
-          { text: '生图实操框架', link: '/ecommerce/image-framework' },
-          { text: '爆款裂变与获客', link: '/ecommerce/growth' },
-          { text: '组织管理与智能体', link: '/ecommerce/management' },
-        ],
-      },
-      {
-        text: '企业落地AI实战',
-        items: [
-          { text: '概览', link: '/ai-landing/index' },
-          { text: 'Agent篇', link: '/ai-landing/agents' },
-          { text: '大模型篇', link: '/ai-landing/llm' },
-          { text: '提效篇', link: '/ai-landing/productivity' },
-          { text: '案例篇', link: '/ai-landing/cases' },
-          { text: '避坑篇', link: '/ai-landing/pitfalls' },
-        ],
-      },
-      {
-        text: '提示词模板库',
-        items: [
-          { text: '概览', link: '/prompts/index' },
-          { text: '商业决策角色', link: '/prompts/business' },
-          { text: '万能角色扮演', link: '/prompts/roles' },
-          { text: '提示词工程技巧', link: '/prompts/techniques' },
-        ],
-      },
-      {
-        text: 'AI工具实测',
-        items: [
-          { text: '概览', link: '/tools/index' },
-          { text: '文字AI工具', link: '/tools/writing' },
-          { text: 'AI作图工具', link: '/tools/image' },
-          { text: 'AI视频工具', link: '/tools/video' },
-          { text: 'AI客服工具', link: '/tools/service' },
+          {
+            text: '企业落地AI',
+            items: [
+              { text: '概览', link: '/ai-landing/index' },
+              { text: 'Agent篇', link: '/ai-landing/agents' },
+              { text: '大模型篇', link: '/ai-landing/llm' },
+              { text: '提效篇', link: '/ai-landing/productivity' },
+              { text: '案例篇', link: '/ai-landing/cases' },
+              { text: '避坑篇', link: '/ai-landing/pitfalls' },
+            ],
+          },
+          {
+            text: '电商AI',
+            items: [
+              { text: '概览', link: '/ecommerce/index' },
+              { text: 'AI作图革命', link: '/ecommerce/ai-image' },
+              { text: '生图实操框架', link: '/ecommerce/image-framework' },
+              { text: '爆款裂变与获客', link: '/ecommerce/growth' },
+              { text: '组织管理与智能体', link: '/ecommerce/management' },
+            ],
+          },
         ],
       },
       { text: '常见问题', link: '/faq' },
