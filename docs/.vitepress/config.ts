@@ -55,11 +55,13 @@ export default defineConfig({
         ],
       },
       {
-        text: '国外AI方法论',
+        text: '企业落地AI实战',
         items: [
-          { text: '概览', link: '/insights/index' },
-          { text: 'Anthropic 系列', link: '/insights/anthropic' },
-          { text: 'OpenAI 系列', link: '/insights/openai' },
+          { text: '概览', link: '/ai-landing/index' },
+          { text: 'Agent篇', link: '/ai-landing/agents' },
+          { text: '大模型篇', link: '/ai-landing/llm' },
+          { text: '提效篇', link: '/ai-landing/productivity' },
+          { text: '避坑篇', link: '/ai-landing/pitfalls' },
         ],
       },
       { text: '关于', link: '/about' },
@@ -187,13 +189,15 @@ export default defineConfig({
           ],
         },
       ],
-      '/insights/': [
+      '/ai-landing/': [
         {
-          text: '国外AI方法论',
+          text: '企业落地AI实战',
           items: [
-            { text: '概览', link: '/insights/index' },
-            { text: 'Anthropic 系列', link: '/insights/anthropic' },
-            { text: 'OpenAI 系列', link: '/insights/openai' },
+            { text: '概览', link: '/ai-landing/index' },
+            { text: 'Agent篇', link: '/ai-landing/agents' },
+            { text: '大模型篇', link: '/ai-landing/llm' },
+            { text: '提效篇', link: '/ai-landing/productivity' },
+            { text: '避坑篇', link: '/ai-landing/pitfalls' },
           ],
         },
       ],
