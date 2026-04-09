@@ -87,6 +87,15 @@ export default defineConfig({
             ],
           },
           {
+            text: 'Agent Harness 实战',
+            items: [
+              { text: '系列概览', link: '/agent-harness/index' },
+              { text: '为什么要懂', link: '/agent-harness/why' },
+              { text: '怎么搭建', link: '/agent-harness/how' },
+              { text: '核心组件', link: '/agent-harness/what' },
+            ],
+          },
+          {
             text: '电商AI',
             items: [
               { text: '概览', link: '/ecommerce/index' },
@@ -221,6 +230,17 @@ export default defineConfig({
             { text: '音频生成', link: '/models/audio' },
             { text: '视频生成', link: '/models/video' },
             { text: '模型对比', link: '/models/comparison' },
+          ],
+        },
+      ],
+      '/agent-harness/': [
+        {
+          text: 'Agent Harness 实战',
+          items: [
+            { text: '系列概览', link: '/agent-harness/index' },
+            { text: '为什么要懂', link: '/agent-harness/why' },
+            { text: '怎么搭建', link: '/agent-harness/how' },
+            { text: '核心组件', link: '/agent-harness/what' },
           ],
         },
       ],
