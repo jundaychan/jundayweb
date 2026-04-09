@@ -86,6 +86,16 @@ export default defineConfig({
               { text: '实战案例', link: '/agent-skills/cases' },
             ],
           },
+          {
+            text: 'MCP 实战教程',
+            items: [
+              { text: '什么是 MCP', link: '/mcp/index' },
+              { text: '快速上手', link: '/mcp/setup' },
+              { text: 'MCP 生态', link: '/mcp/ecosystem' },
+              { text: '搭建自己的 MCP', link: '/mcp/build' },
+              { text: '安全须知', link: '/mcp/security' },
+            ],
+          },
         ],
       },
       {
@@ -359,6 +369,25 @@ export default defineConfig({
       ],
 
       // === 阶段三：打造能力 ===
+      '/mcp/': [
+        {
+          text: 'MCP 实战教程',
+          items: [
+            { text: '什么是 MCP', link: '/mcp/index' },
+            { text: '快速上手', link: '/mcp/setup' },
+            { text: 'MCP 生态', link: '/mcp/ecosystem' },
+            { text: '搭建自己的 MCP', link: '/mcp/build' },
+            { text: '安全须知', link: '/mcp/security' },
+          ],
+        },
+        {
+          text: '相关内容',
+          items: [
+            { text: 'Agent Skills 教程', link: '/agent-skills/index' },
+            { text: 'Agent Harness', link: '/agent-harness/index' },
+          ],
+        },
+      ],
       '/agent-skills/': [
         {
           text: 'Agent Skills 教程',
