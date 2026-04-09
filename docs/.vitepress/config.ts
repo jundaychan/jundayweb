@@ -11,10 +11,12 @@ export default defineConfig({
   ],
 
   themeConfig: {
+    // 导航栏：按学习曲线排列
+    // 对话 → 用现成能力 → 写Skill → Agent → 系统构建
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '学AI',
+        text: '学会对话',
         items: [
           {
             text: '入门指南',
@@ -29,29 +31,6 @@ export default defineConfig({
             items: [
               { text: '大语言模型', link: '/concepts/llm' },
               { text: '提示工程', link: '/concepts/prompt-engineering' },
-              { text: 'AI Agent', link: '/concepts/agents' },
-            ],
-          },
-          {
-            text: '100概念速查',
-            items: [
-              { text: 'AI 100概念', link: '/ai100/index' },
-              { text: 'AI编程 100概念', link: '/aicode100/index' },
-            ],
-          },
-        ],
-      },
-      {
-        text: '用AI',
-        items: [
-          {
-            text: 'AI工具实测',
-            items: [
-              { text: '工具对比总览', link: '/tools/index' },
-              { text: '文字AI工具', link: '/tools/writing' },
-              { text: 'AI作图工具', link: '/tools/image' },
-              { text: 'AI视频工具', link: '/tools/video' },
-              { text: 'AI客服工具', link: '/tools/service' },
             ],
           },
           {
@@ -64,6 +43,28 @@ export default defineConfig({
             ],
           },
           {
+            text: '概念速查',
+            items: [
+              { text: 'AI 100概念', link: '/ai100/index' },
+              { text: 'AI编程 100概念', link: '/aicode100/index' },
+            ],
+          },
+        ],
+      },
+      {
+        text: '上手工具',
+        items: [
+          {
+            text: 'AI工具实测',
+            items: [
+              { text: '工具对比总览', link: '/tools/index' },
+              { text: '文字AI工具', link: '/tools/writing' },
+              { text: 'AI作图工具', link: '/tools/image' },
+              { text: 'AI视频工具', link: '/tools/video' },
+              { text: 'AI客服工具', link: '/tools/service' },
+            ],
+          },
+          {
             text: '模型选择',
             items: [
               { text: '模型选择指南', link: '/models/index' },
@@ -73,28 +74,8 @@ export default defineConfig({
         ],
       },
       {
-        text: 'AI实战',
+        text: '打造能力',
         items: [
-          {
-            text: '企业落地AI',
-            items: [
-              { text: '概览', link: '/ai-landing/index' },
-              { text: 'Agent篇', link: '/ai-landing/agents' },
-              { text: '大模型篇', link: '/ai-landing/llm' },
-              { text: '提效篇', link: '/ai-landing/productivity' },
-              { text: '案例篇', link: '/ai-landing/cases' },
-              { text: '避坑篇', link: '/ai-landing/pitfalls' },
-            ],
-          },
-          {
-            text: 'Agent Harness 实战',
-            items: [
-              { text: '系列概览', link: '/agent-harness/index' },
-              { text: '为什么要懂', link: '/agent-harness/why' },
-              { text: '怎么搭建', link: '/agent-harness/how' },
-              { text: '核心组件', link: '/agent-harness/what' },
-            ],
-          },
           {
             text: 'Agent Skills 教程',
             items: [
@@ -103,6 +84,37 @@ export default defineConfig({
               { text: '如何设计 Skills', link: '/agent-skills/design' },
               { text: '手把手搭建', link: '/agent-skills/build' },
               { text: '实战案例', link: '/agent-skills/cases' },
+            ],
+          },
+        ],
+      },
+      {
+        text: '搭建体系',
+        items: [
+          {
+            text: '理解 Agent',
+            items: [
+              { text: 'AI Agent 是什么', link: '/concepts/agents' },
+            ],
+          },
+          {
+            text: 'Agent Harness',
+            items: [
+              { text: '系列概览', link: '/agent-harness/index' },
+              { text: '为什么要懂', link: '/agent-harness/why' },
+              { text: '怎么搭建', link: '/agent-harness/how' },
+              { text: '核心组件', link: '/agent-harness/what' },
+            ],
+          },
+          {
+            text: '企业落地',
+            items: [
+              { text: '概览', link: '/ai-landing/index' },
+              { text: 'Agent篇', link: '/ai-landing/agents' },
+              { text: '大模型篇', link: '/ai-landing/llm' },
+              { text: '提效篇', link: '/ai-landing/productivity' },
+              { text: '案例篇', link: '/ai-landing/cases' },
+              { text: '避坑篇', link: '/ai-landing/pitfalls' },
             ],
           },
           {
@@ -121,7 +133,9 @@ export default defineConfig({
       { text: '关于', link: '/about' },
     ],
 
+    // 侧边栏：按学习阶段分组
     sidebar: {
+      // === 阶段一：学会对话 ===
       '/guide/': [
         {
           text: '入门指南',
@@ -136,7 +150,15 @@ export default defineConfig({
           items: [
             { text: '大语言模型', link: '/concepts/llm' },
             { text: '提示工程', link: '/concepts/prompt-engineering' },
-            { text: 'AI Agent', link: '/concepts/agents' },
+          ],
+        },
+        {
+          text: '提示词模板库',
+          items: [
+            { text: '概览', link: '/prompts/index' },
+            { text: '商业决策角色', link: '/prompts/business' },
+            { text: '万能角色扮演', link: '/prompts/roles' },
+            { text: '提示词工程技巧', link: '/prompts/techniques' },
           ],
         },
         {
@@ -147,7 +169,7 @@ export default defineConfig({
           ],
         },
       ],
-      '/concepts/': [
+      '/concepts/llm': [
         {
           text: '入门指南',
           items: [
@@ -161,14 +183,68 @@ export default defineConfig({
           items: [
             { text: '大语言模型', link: '/concepts/llm' },
             { text: '提示工程', link: '/concepts/prompt-engineering' },
-            { text: 'AI Agent', link: '/concepts/agents' },
           ],
         },
         {
-          text: '实践应用',
+          text: '提示词模板库',
           items: [
-            { text: '企业应用场景', link: '/practice/scenarios' },
-            { text: '推荐工具', link: '/practice/tools' },
+            { text: '概览', link: '/prompts/index' },
+            { text: '商业决策角色', link: '/prompts/business' },
+            { text: '万能角色扮演', link: '/prompts/roles' },
+            { text: '提示词工程技巧', link: '/prompts/techniques' },
+          ],
+        },
+      ],
+      '/concepts/prompt': [
+        {
+          text: '入门指南',
+          items: [
+            { text: '什么是 AI', link: '/guide/what-is-ai' },
+            { text: '为什么企业需要关注 AI', link: '/guide/why-ai-matters' },
+            { text: '如何开始 AI 转型', link: '/guide/getting-started' },
+          ],
+        },
+        {
+          text: '核心概念',
+          items: [
+            { text: '大语言模型', link: '/concepts/llm' },
+            { text: '提示工程', link: '/concepts/prompt-engineering' },
+          ],
+        },
+        {
+          text: '提示词模板库',
+          items: [
+            { text: '概览', link: '/prompts/index' },
+            { text: '商业决策角色', link: '/prompts/business' },
+            { text: '万能角色扮演', link: '/prompts/roles' },
+            { text: '提示词工程技巧', link: '/prompts/techniques' },
+          ],
+        },
+      ],
+      // concepts/agents 归到"搭建体系"
+      '/concepts/agents': [
+        {
+          text: '理解 Agent',
+          items: [
+            { text: 'AI Agent 是什么', link: '/concepts/agents' },
+          ],
+        },
+        {
+          text: 'Agent Harness',
+          items: [
+            { text: '系列概览', link: '/agent-harness/index' },
+            { text: '为什么要懂', link: '/agent-harness/why' },
+            { text: '怎么搭建', link: '/agent-harness/how' },
+            { text: '核心组件', link: '/agent-harness/what' },
+          ],
+        },
+        {
+          text: '企业落地AI',
+          items: [
+            { text: '概览', link: '/ai-landing/index' },
+            { text: 'Agent篇', link: '/ai-landing/agents' },
+            { text: '案例篇', link: '/ai-landing/cases' },
+            { text: '避坑篇', link: '/ai-landing/pitfalls' },
           ],
         },
       ],
@@ -182,18 +258,21 @@ export default defineConfig({
           ],
         },
         {
-          text: '核心概念',
-          items: [
-            { text: '大语言模型', link: '/concepts/llm' },
-            { text: '提示工程', link: '/concepts/prompt-engineering' },
-            { text: 'AI Agent', link: '/concepts/agents' },
-          ],
-        },
-        {
           text: '实践应用',
           items: [
             { text: '企业应用场景', link: '/practice/scenarios' },
             { text: '推荐工具', link: '/practice/tools' },
+          ],
+        },
+      ],
+      '/prompts/': [
+        {
+          text: '提示词模板库',
+          items: [
+            { text: '概览', link: '/prompts/index' },
+            { text: '商业决策角色', link: '/prompts/business' },
+            { text: '万能角色扮演', link: '/prompts/roles' },
+            { text: '提示词工程技巧', link: '/prompts/techniques' },
           ],
         },
       ],
@@ -230,7 +309,19 @@ export default defineConfig({
           ],
         },
       ],
-      '/models/': [
+
+      // === 阶段二：上手工具 ===
+      '/tools/': [
+        {
+          text: 'AI工具实测',
+          items: [
+            { text: '概览', link: '/tools/index' },
+            { text: '文字AI工具', link: '/tools/writing' },
+            { text: 'AI作图工具', link: '/tools/image' },
+            { text: 'AI视频工具', link: '/tools/video' },
+            { text: 'AI客服工具', link: '/tools/service' },
+          ],
+        },
         {
           text: '模型选择指南',
           items: [
@@ -243,6 +334,31 @@ export default defineConfig({
           ],
         },
       ],
+      '/models/': [
+        {
+          text: 'AI工具实测',
+          items: [
+            { text: '概览', link: '/tools/index' },
+            { text: '文字AI工具', link: '/tools/writing' },
+            { text: 'AI作图工具', link: '/tools/image' },
+            { text: 'AI视频工具', link: '/tools/video' },
+            { text: 'AI客服工具', link: '/tools/service' },
+          ],
+        },
+        {
+          text: '模型选择指南',
+          items: [
+            { text: '概览', link: '/models/index' },
+            { text: '文字文案', link: '/models/text' },
+            { text: '图片生成', link: '/models/image' },
+            { text: '音频生成', link: '/models/audio' },
+            { text: '视频生成', link: '/models/video' },
+            { text: '模型对比', link: '/models/comparison' },
+          ],
+        },
+      ],
+
+      // === 阶段三：打造能力 ===
       '/agent-skills/': [
         {
           text: 'Agent Skills 教程',
@@ -255,14 +371,30 @@ export default defineConfig({
           ],
         },
       ],
+
+      // === 阶段四：搭建体系 ===
       '/agent-harness/': [
         {
-          text: 'Agent Harness 实战',
+          text: '理解 Agent',
+          items: [
+            { text: 'AI Agent 是什么', link: '/concepts/agents' },
+          ],
+        },
+        {
+          text: 'Agent Harness',
           items: [
             { text: '系列概览', link: '/agent-harness/index' },
             { text: '为什么要懂', link: '/agent-harness/why' },
             { text: '怎么搭建', link: '/agent-harness/how' },
             { text: '核心组件', link: '/agent-harness/what' },
+          ],
+        },
+        {
+          text: '企业落地AI',
+          items: [
+            { text: '概览', link: '/ai-landing/index' },
+            { text: 'Agent篇', link: '/ai-landing/agents' },
+            { text: '案例篇', link: '/ai-landing/cases' },
           ],
         },
       ],
@@ -278,6 +410,13 @@ export default defineConfig({
             { text: '避坑篇', link: '/ai-landing/pitfalls' },
           ],
         },
+        {
+          text: '相关内容',
+          items: [
+            { text: 'AI Agent 是什么', link: '/concepts/agents' },
+            { text: 'Agent Harness', link: '/agent-harness/index' },
+          ],
+        },
       ],
       '/ecommerce/': [
         {
@@ -290,27 +429,11 @@ export default defineConfig({
             { text: '组织管理与智能体', link: '/ecommerce/management' },
           ],
         },
-      ],
-      '/prompts/': [
         {
-          text: '提示词模板库',
+          text: '相关内容',
           items: [
-            { text: '概览', link: '/prompts/index' },
-            { text: '商业决策角色', link: '/prompts/business' },
-            { text: '万能角色扮演', link: '/prompts/roles' },
-            { text: '提示词工程技巧', link: '/prompts/techniques' },
-          ],
-        },
-      ],
-      '/tools/': [
-        {
-          text: 'AI工具实测',
-          items: [
-            { text: '概览', link: '/tools/index' },
-            { text: '文字AI工具', link: '/tools/writing' },
-            { text: 'AI作图工具', link: '/tools/image' },
-            { text: 'AI视频工具', link: '/tools/video' },
-            { text: 'AI客服工具', link: '/tools/service' },
+            { text: 'Agent Skills 教程', link: '/agent-skills/index' },
+            { text: '企业落地AI', link: '/ai-landing/index' },
           ],
         },
       ],
