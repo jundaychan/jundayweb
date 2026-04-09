@@ -36,16 +36,17 @@
 
 ### 导航分组逻辑
 
-顶部导航分为 **5 个区**：
+顶部导航按 **学习曲线** 排列（对话 → 用现成能力 → 写Skill → 接MCP → Agent → 系统构建）：
 
 ```
-首页 | 学AI ▾ | 用AI ▾ | AI实战 ▾ | 常见问题 | 关于
+首页 | 学会对话 ▾ | 上手工具 ▾ | 打造能力 ▾ | 搭建体系 ▾ | 常见问题 | 关于
 ```
 
-- **学AI**：从零开始理解 AI（入门指南 + 核心概念 + 100概念速查）
-- **用AI**：马上能用的工具和模板（工具实测 + 提示词模板库 + 模型选择）
-- **AI实战**：深度实战案例和方法论（企业落地 + 电商AI）
-- **常见问题**：法律、安全、成本、团队管理等
+- **学会对话**：从零开始理解 AI（入门指南 + 核心概念 + 提示词模板库 + 概念速查）
+- **上手工具**：用现成的 AI 能力（工具实测 + 模型选择）
+- **打造能力**：写自己的 Skill + 接 MCP（Agent Skills 教程 + MCP 实战教程）
+- **搭建体系**：Agent + Harness + 企业落地（理解Agent + Agent Harness + 企业落地AI + 电商AI）
+- **常见问题**：成本、安全、团队管理等实际问题
 - **关于**：Junday 个人介绍
 
 ### 目录结构
@@ -105,6 +106,23 @@ docs/
 │   ├── business.md              # 商业角色系统提示词（来自 ai-boost/awesome-prompts）
 │   ├── roles.md                 # 万能角色扮演（来自 f/awesome-chatgpt-prompts, 143K stars）
 │   └── techniques.md            # 提示词工程技巧（来自 DAIR.AI, 72K stars）
+├── agent-harness/               # Agent Harness 实战（基于 Anthropic 4篇官方博客）
+│   ├── index.md
+│   ├── why.md                   # 为什么要懂 Harness（4种失败模式、Manus/LangChain/Vercel 证据）
+│   ├── how.md                   # 怎么搭建（Anthropic 5种架构模式 + 三Agent架构）
+│   └── what.md                  # 核心组件（11个组件详解 + 电商客服完整示例）
+├── agent-skills/                # Agent Skills 教程（基于 Anthropic/OpenAI/Coze/Dify）
+│   ├── index.md                 # Polanyi 默会知识洞察 + 系列导航
+│   ├── what.md                  # 什么是 Skills（跨平台概念、MCP 简介）
+│   ├── design.md                # 设计原则（6条铁律 + 5种模式）
+│   ├── build.md                 # 手把手搭建（扣子零代码 + Dify + API）
+│   └── cases.md                 # 实战案例（电商/客服/知识付费/财务）
+├── mcp/                         # MCP 实战教程（基于 MCP 官方规范 + 企业实践）
+│   ├── index.md                 # 什么是 MCP、全行业采纳时间线、国内平台
+│   ├── setup.md                 # 快速上手（Claude Desktop/Cursor/Dify/百炼）
+│   ├── ecosystem.md             # 生态（5800+全球服务器、国内15万+、按行业选）
+│   ├── build.md                 # 自建 MCP 服务器（Python/TypeScript/Dify）
+│   └── security.md              # 安全须知（5个风险、检查清单）
 ├── ai-landing/                  # 企业落地AI实战（参考 Anthropic、OpenAI 等一手资料）
 │   ├── index.md
 │   ├── agents.md                # Agent 5种模式、能力现实评估
@@ -166,6 +184,9 @@ push to `main` 分支即自动触发 Cloudflare Pages 构建部署。
 | 企业落地-提效篇 | Anthropic 10万对话数据分析 |
 | 企业落地-案例篇 | Klarna、Shopify、Amazon、字节、阿里、美团等企业公开报告 |
 | 企业落地-避坑篇 | BCG 2025报告、OpenAI Agent 测试数据 |
+| Agent Harness | Anthropic 4篇官方博客（Building Effective Agents、Effective Harnesses、Harness Design、Context Engineering） |
+| Agent Skills | Anthropic Tool Use 文档、OpenAI Function Calling、Coze 2.0、Dify、5 Agent Skill Design Patterns |
+| MCP 教程 | MCP 官方规范 modelcontextprotocol.io、Pinterest/Block/Bloomberg 实践、百度/阿里/腾讯/讯飞国内平台 |
 | 电商AI实战 | 700页电商AI课程PPT（Kimi总结） |
 | 工具实测 | 各平台官网 + 第三方评测（2025年数据） |
 | FAQ-版权 | 北京互联网法院2023判决、GB 45438-2025 |
