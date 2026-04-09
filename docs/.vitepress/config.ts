@@ -96,6 +96,16 @@ export default defineConfig({
             ],
           },
           {
+            text: 'Agent Skills 教程',
+            items: [
+              { text: '系列概览', link: '/agent-skills/index' },
+              { text: '什么是 Skills', link: '/agent-skills/what' },
+              { text: '如何设计 Skills', link: '/agent-skills/design' },
+              { text: '手把手搭建', link: '/agent-skills/build' },
+              { text: '实战案例', link: '/agent-skills/cases' },
+            ],
+          },
+          {
             text: '电商AI',
             items: [
               { text: '概览', link: '/ecommerce/index' },
@@ -230,6 +240,18 @@ export default defineConfig({
             { text: '音频生成', link: '/models/audio' },
             { text: '视频生成', link: '/models/video' },
             { text: '模型对比', link: '/models/comparison' },
+          ],
+        },
+      ],
+      '/agent-skills/': [
+        {
+          text: 'Agent Skills 教程',
+          items: [
+            { text: '系列概览', link: '/agent-skills/index' },
+            { text: '什么是 Skills', link: '/agent-skills/what' },
+            { text: '如何设计 Skills', link: '/agent-skills/design' },
+            { text: '手把手搭建', link: '/agent-skills/build' },
+            { text: '实战案例', link: '/agent-skills/cases' },
           ],
         },
       ],
