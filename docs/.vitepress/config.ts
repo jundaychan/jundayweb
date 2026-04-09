@@ -108,6 +108,15 @@ export default defineConfig({
             ],
           },
           {
+            text: 'Agent 搭建实战',
+            items: [
+              { text: '概览', link: '/agent-guide/index' },
+              { text: '搭建第一个 Agent', link: '/agent-guide/first-agent' },
+              { text: '测试和评估', link: '/agent-guide/testing' },
+              { text: '上生产', link: '/agent-guide/production' },
+            ],
+          },
+          {
             text: 'Agent Harness',
             items: [
               { text: '系列概览', link: '/agent-harness/index' },
@@ -402,6 +411,26 @@ export default defineConfig({
       ],
 
       // === 阶段四：搭建体系 ===
+      '/agent-guide/': [
+        {
+          text: 'Agent 搭建实战',
+          items: [
+            { text: '概览', link: '/agent-guide/index' },
+            { text: '搭建第一个 Agent', link: '/agent-guide/first-agent' },
+            { text: '测试和评估', link: '/agent-guide/testing' },
+            { text: '上生产', link: '/agent-guide/production' },
+          ],
+        },
+        {
+          text: '深入学习',
+          items: [
+            { text: 'AI Agent 是什么', link: '/concepts/agents' },
+            { text: 'Agent Harness', link: '/agent-harness/index' },
+            { text: 'Agent Skills', link: '/agent-skills/index' },
+            { text: 'MCP 教程', link: '/mcp/index' },
+          ],
+        },
+      ],
       '/agent-harness/': [
         {
           text: '理解 Agent',
