@@ -166,8 +166,13 @@ export default defineConfig({
         ],
       },
       { text: '常见问题', link: '/faq' },
-      { text: 'AI 周报', link: '/digest' },
-      { text: '信息源', link: '/sources' },
+      {
+        text: 'AI 资讯',
+        items: [
+          { text: 'AI 周报', link: '/digest' },
+          { text: '信息源推荐', link: '/sources' },
+        ],
+      },
       { text: '关于', link: '/about' },
     ],
 
