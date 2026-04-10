@@ -15,6 +15,7 @@ export default defineConfig({
     // 对话 → 用现成能力 → 写Skill → Agent → 系统构建
     nav: [
       { text: '首页', link: '/' },
+      { text: '学习路线', link: '/roadmap' },
       {
         text: '学会对话',
         items: [

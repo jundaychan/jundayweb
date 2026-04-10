@@ -7,16 +7,20 @@ hero:
   tagline: 我是俊达，一个用 AI 做业务的创业者。这个网站是我让 AI 写的 AI 实战指南 —— 200+概念、真实案例、踩坑经验，全部免费。
   actions:
     - theme: brand
+      text: 开始学习路线
+      link: /roadmap
+    - theme: alt
       text: 企业落地AI实战
       link: /ai-landing/index
     - theme: alt
       text: 电商AI实战
       link: /ecommerce/index
-    - theme: alt
-      text: AI 100概念
-      link: /ai100/index
 
 features:
+  - title: "4个阶段，从入门到重构业务"
+    details: "对话 → 工具 → 能力 → 体系。40+篇实战内容，每个阶段都有明确产出。不管你在哪个阶段，都能找到下一步。"
+    link: /roadmap
+    linkText: 看学习路线
   - title: "你的竞品已经在用AI了"
     details: "Klarna用AI砍掉40%人力，收入翻倍。电商商家用AI出图成本从万元降到3毛。你还在观望？"
     link: /ai-landing/cases
@@ -33,12 +37,8 @@ features:
     details: "来自GitHub 143K Star的顶级开源项目，翻译成中文。商业角色、万能模板、工程技巧，复制粘贴就能用。"
     link: /prompts/index
     linkText: 拿提示词模板
-  - title: "不懂AI，至少要懂这100个概念"
-    details: "不是字典，是老板视角的AI认知体系。每个概念都告诉你：这跟你赚钱有什么关系。"
-    link: /ai100/index
-    linkText: 开始建立认知
-  - title: "60%的企业投了AI没回报，为什么？"
-    details: "BCG 2025年数据。不是AI没用，是用法不对。看看成功的企业做对了什么，失败的踩了哪些坑。"
+  - title: "95%的AI项目没回报，为什么？"
+    details: "MIT 2025研究数据。不是AI没用，是用法不对。看看成功的企业做对了什么，失败的踩了哪些坑。"
     link: /ai-landing/pitfalls
     linkText: 避开大坑
 ---
@@ -268,19 +268,19 @@ features:
   </div>
 </div>
 
-## 推荐阅读路径
+## 学习路线
 
 <div class="roadmap">
-  <div class="step"><span class="num">1</span> <a href="/guide/what-is-ai">先建认知</a></div>
+  <div class="step"><span class="num">1</span> <a href="/roadmap#学会对话">学会对话</a></div>
   <span class="arrow">→</span>
-  <div class="step"><span class="num">2</span> <a href="/tools/index">选对工具</a></div>
+  <div class="step"><span class="num">2</span> <a href="/roadmap#上手工具">上手工具</a></div>
   <span class="arrow">→</span>
-  <div class="step"><span class="num">3</span> <a href="/prompts/index">拿提示词模板</a></div>
+  <div class="step"><span class="num">3</span> <a href="/roadmap#打造能力">打造能力</a></div>
   <span class="arrow">→</span>
-  <div class="step"><span class="num">4</span> <a href="/ai-landing/cases">看真实案例</a></div>
-  <span class="arrow">→</span>
-  <div class="step"><span class="num">5</span> <a href="/faq">看常见问题</a></div>
+  <div class="step"><span class="num">4</span> <a href="/roadmap#搭建体系">搭建体系</a></div>
 </div>
+
+<p style="text-align:center;margin-top:12px;"><a href="/roadmap" style="color:var(--vp-c-brand-1);font-weight:600;font-size:14px;">查看完整学习路线 →</a></p>
 
 ## 关于我
 
