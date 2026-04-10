@@ -20,12 +20,12 @@
   top: 0; left: 0; right: 0;
   height: 3px;
 }
-.stage-1::before { background: linear-gradient(90deg, #2b5ea7, #5a8fd0); }
-.stage-2::before { background: linear-gradient(90deg, #3a6fb8, #7baae0); }
-.stage-3::before { background: linear-gradient(90deg, #2e7d32, #66bb6a); }
-.stage-4::before { background: linear-gradient(90deg, #e65100, #ff9800); }
-.stage-5::before { background: linear-gradient(90deg, #6a1b9a, #ab47bc); }
-.stage-6::before { background: linear-gradient(90deg, #1a2b4a, #4a5568); }
+.stage-1::before { background: linear-gradient(90deg, #c96442, #d97757); }
+.stage-2::before { background: linear-gradient(90deg, #d97757, #e8a080); }
+.stage-3::before { background: linear-gradient(90deg, #8b7355, #a89070); }
+.stage-4::before { background: linear-gradient(90deg, #7a6b50, #9a8b70); }
+.stage-5::before { background: linear-gradient(90deg, #5e5d59, #87867f); }
+.stage-6::before { background: linear-gradient(90deg, #141413, #4d4c48); }
 
 .stage-header {
   display: flex;
@@ -44,12 +44,12 @@
   color: white;
   flex-shrink: 0;
 }
-.stage-1 .stage-num { background: #2b5ea7; }
-.stage-2 .stage-num { background: #3a6fb8; }
-.stage-3 .stage-num { background: #2e7d32; }
-.stage-4 .stage-num { background: #e65100; }
-.stage-5 .stage-num { background: #6a1b9a; }
-.stage-6 .stage-num { background: #1a2b4a; }
+.stage-1 .stage-num { background: #c96442; }
+.stage-2 .stage-num { background: #d97757; }
+.stage-3 .stage-num { background: #8b7355; }
+.stage-4 .stage-num { background: #7a6b50; }
+.stage-5 .stage-num { background: #5e5d59; }
+.stage-6 .stage-num { background: #141413; }
 
 .stage-title {
   font-size: 22px;
@@ -71,8 +71,8 @@
   margin-left: 8px;
   vertical-align: middle;
 }
-.type-declarative { background: rgba(46, 125, 50, 0.1); color: #2e7d32; }
-.type-imperative { background: rgba(230, 81, 0, 0.1); color: #e65100; }
+.type-declarative { background: rgba(201, 100, 66, 0.08); color: #c96442; }
+.type-imperative { background: rgba(94, 93, 89, 0.1); color: #5e5d59; }
 
 .stage-goal {
   background: var(--vp-c-bg-soft);
@@ -130,12 +130,12 @@
   margin-top: 6px;
   font-weight: 500;
 }
-.tag-s1 { background: rgba(43, 94, 167, 0.1); color: #2b5ea7; }
-.tag-s2 { background: rgba(58, 111, 184, 0.1); color: #3a6fb8; }
-.tag-s3 { background: rgba(46, 125, 50, 0.1); color: #2e7d32; }
-.tag-s4 { background: rgba(230, 81, 0, 0.1); color: #e65100; }
-.tag-s5 { background: rgba(106, 27, 154, 0.1); color: #6a1b9a; }
-.tag-s6 { background: rgba(26, 43, 74, 0.1); color: #1a2b4a; }
+.tag-s1 { background: rgba(201, 100, 66, 0.1); color: #c96442; }
+.tag-s2 { background: rgba(217, 119, 87, 0.1); color: #d97757; }
+.tag-s3 { background: rgba(139, 115, 85, 0.1); color: #8b7355; }
+.tag-s4 { background: rgba(122, 107, 80, 0.1); color: #7a6b50; }
+.tag-s5 { background: rgba(94, 93, 89, 0.1); color: #5e5d59; }
+.tag-s6 { background: rgba(20, 20, 19, 0.1); color: #141413; }
 
 .connector {
   display: flex;
@@ -157,7 +157,7 @@
 }
 
 .quick-start {
-  border: 2px solid var(--vp-c-brand-1);
+  border: 1px solid var(--vp-c-border);
   border-radius: 12px;
   padding: 24px;
   text-align: center;
@@ -187,7 +187,7 @@
   transition: background 0.2s, transform 0.2s;
 }
 .quick-start .btn:hover {
-  background: #234e8c;
+  background: #b85a3a;
   transform: translateY(-1px);
 }
 
@@ -220,7 +220,7 @@
 }
 
 .insight-box {
-  background: #1a2b4a;
+  background: #141413;
   border-radius: 14px;
   padding: 28px 30px;
   color: white;
@@ -241,7 +241,7 @@
 }
 .insight-main em {
   font-style: normal;
-  color: #6b9de8;
+  color: #d97757;
 }
 .insight-sub {
   font-size: 14px;
@@ -263,20 +263,20 @@
   padding: 20px 22px;
 }
 .compare-left {
-  background: rgba(46,125,50,0.05);
-  border: 1px solid rgba(46,125,50,0.15);
+  background: rgba(201, 100, 66, 0.04);
+  border: 1px solid rgba(201, 100, 66, 0.15);
 }
 .compare-right {
-  background: rgba(230,81,0,0.04);
-  border: 1px solid rgba(230,81,0,0.12);
+  background: rgba(94, 93, 89, 0.04);
+  border: 1px solid rgba(94, 93, 89, 0.12);
 }
 .compare-card h4 {
   font-size: 16px;
   font-weight: 700;
   margin: 0 0 4px 0;
 }
-.compare-left h4 { color: #2e7d32; }
-.compare-right h4 { color: #e65100; }
+.compare-left h4 { color: #c96442; }
+.compare-right h4 { color: #5e5d59; }
 .compare-card .desc {
   font-size: 13px;
   color: var(--vp-c-text-3);

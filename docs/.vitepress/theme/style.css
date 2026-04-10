@@ -1,11 +1,12 @@
 /*
- * 设计系统：Claude 暖底色 + Stripe 信任蓝 + Mintlify 文档节奏
+ * 设计系统：Anthropic / Claude 官方风格
+ * 来源：VoltAgent/awesome-design-md — Claude DESIGN.md
  *
  * 设计原则：
- * 1. 暖底色（#f8f7f2）— 不是冷冰冰的技术文档，是"有温度的专家"
- * 2. 深蓝标题（#1a2b4a）— 信任感，像金融级产品
- * 3. 商业蓝品牌色 — 支付宝蓝、微信蓝的心智：专业 + 可靠
- * 4. 微妙边框，不用阴影 — 干净、文档感
+ * 1. 羊皮纸底色（#f5f4ed）— 温暖、像纸不像屏幕
+ * 2. 赤陶品牌色（#c96442）— 土质感，刻意远离科技冷感
+ * 3. 全暖色调灰阶 — 每个灰色都带黄棕底调，零冷灰
+ * 4. Ring shadow（0px 0px 0px 1px）— 用阴影模拟边框，比真边框更柔
  * 5. 中文系统字体 — 零外部请求，中国访问零延迟
  */
 
@@ -14,112 +15,112 @@
    ============================================================ */
 
 :root {
-  /* --- 字体 --- */
+  /* --- 字体：中文系统字体 + Georgia 做英文衬线 --- */
   --vp-font-family-base: -apple-system, BlinkMacSystemFont, "PingFang SC",
     "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
   --vp-font-family-mono: "JetBrains Mono", "Fira Code", Menlo, Monaco,
     Consolas, "Courier New", monospace;
 
-  /* --- 品牌色：商业蓝 --- */
-  --vp-c-brand-1: #2b5ea7;
-  --vp-c-brand-2: #3a6fb8;
-  --vp-c-brand-3: #5a8fd0;
-  --vp-c-brand-soft: rgba(43, 94, 167, 0.08);
+  /* --- 品牌色：赤陶色（Anthropic Terracotta）--- */
+  --vp-c-brand-1: #c96442;
+  --vp-c-brand-2: #d97757;
+  --vp-c-brand-3: #e8845c;
+  --vp-c-brand-soft: rgba(201, 100, 66, 0.08);
 
-  /* --- 背景色：暖底色（Claude 启发）--- */
-  --vp-c-bg: #f8f7f2;
-  --vp-c-bg-alt: #f3f1ea;
-  --vp-c-bg-soft: #efeee6;
-  --vp-c-bg-mute: #e8e6dc;
-  --vp-c-bg-elv: #ffffff;
+  /* --- 背景色：羊皮纸（Parchment）--- */
+  --vp-c-bg: #f5f4ed;
+  --vp-c-bg-alt: #f0eee6;
+  --vp-c-bg-soft: #e8e6dc;
+  --vp-c-bg-mute: #e0ded4;
+  --vp-c-bg-elv: #faf9f5;
 
-  /* --- 文字色：Stripe 深蓝灰 --- */
-  --vp-c-text-1: #1a2b4a;
-  --vp-c-text-2: #4a5568;
-  --vp-c-text-3: #8892a4;
+  /* --- 文字色：暖色调灰阶 --- */
+  --vp-c-text-1: #141413;
+  --vp-c-text-2: #5e5d59;
+  --vp-c-text-3: #87867f;
 
-  /* --- 边框：Mintlify 微妙边框 --- */
-  --vp-c-divider: rgba(30, 40, 60, 0.08);
-  --vp-c-border: rgba(30, 40, 60, 0.12);
-  --vp-c-gutter: rgba(30, 40, 60, 0.04);
+  /* --- 边框：暖奶油色 --- */
+  --vp-c-divider: #f0eee6;
+  --vp-c-border: #e8e6dc;
+  --vp-c-gutter: #f0eee6;
 
   /* --- 功能色 --- */
-  --vp-c-tip-1: #2b5ea7;
-  --vp-c-tip-2: rgba(43, 94, 167, 0.14);
-  --vp-c-tip-3: rgba(43, 94, 167, 0.08);
+  --vp-c-tip-1: #c96442;
+  --vp-c-tip-2: rgba(201, 100, 66, 0.14);
+  --vp-c-tip-3: rgba(201, 100, 66, 0.06);
   --vp-c-warning-1: #b8860b;
   --vp-c-warning-2: rgba(184, 134, 11, 0.14);
-  --vp-c-warning-3: rgba(184, 134, 11, 0.08);
-  --vp-c-danger-1: #c53030;
-  --vp-c-danger-2: rgba(197, 48, 48, 0.14);
-  --vp-c-danger-3: rgba(197, 48, 48, 0.08);
+  --vp-c-warning-3: rgba(184, 134, 11, 0.06);
+  --vp-c-danger-1: #b53333;
+  --vp-c-danger-2: rgba(181, 51, 51, 0.14);
+  --vp-c-danger-3: rgba(181, 51, 51, 0.06);
 
   /* --- Hero 渐变 --- */
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: linear-gradient(
     135deg,
-    #1a2b4a 0%,
-    #2b5ea7 50%,
-    #5a8fd0 100%
+    #141413 0%,
+    #c96442 60%,
+    #d97757 100%
   );
   --vp-home-hero-image-background-image: linear-gradient(
     -45deg,
-    #2b5ea7 50%,
-    #5a8fd0 50%
+    #c96442 50%,
+    #d97757 50%
   );
   --vp-home-hero-image-filter: blur(44px);
 
   /* --- 按钮 --- */
   --vp-button-brand-border: transparent;
-  --vp-button-brand-text: #ffffff;
-  --vp-button-brand-bg: #2b5ea7;
+  --vp-button-brand-text: #faf9f5;
+  --vp-button-brand-bg: #c96442;
   --vp-button-brand-hover-border: transparent;
-  --vp-button-brand-hover-text: #ffffff;
-  --vp-button-brand-hover-bg: #234e8c;
+  --vp-button-brand-hover-text: #faf9f5;
+  --vp-button-brand-hover-bg: #b85a3a;
   --vp-button-brand-active-border: transparent;
-  --vp-button-brand-active-text: #ffffff;
-  --vp-button-brand-active-bg: #1c4075;
+  --vp-button-brand-active-text: #faf9f5;
+  --vp-button-brand-active-bg: #a55033;
 
-  --vp-button-alt-border: rgba(30, 40, 60, 0.12);
-  --vp-button-alt-text: #1a2b4a;
-  --vp-button-alt-bg: #efeee6;
-  --vp-button-alt-hover-border: rgba(30, 40, 60, 0.18);
-  --vp-button-alt-hover-text: #1a2b4a;
-  --vp-button-alt-hover-bg: #e8e6dc;
+  --vp-button-alt-border: #e8e6dc;
+  --vp-button-alt-text: #4d4c48;
+  --vp-button-alt-bg: #e8e6dc;
+  --vp-button-alt-hover-border: #d1cfc5;
+  --vp-button-alt-hover-text: #4d4c48;
+  --vp-button-alt-hover-bg: #e0ded4;
 }
 
 /* --- Dark Mode --- */
 .dark {
-  --vp-c-brand-1: #6b9de8;
-  --vp-c-brand-2: #5a8fd0;
-  --vp-c-brand-3: #4a7fc0;
-  --vp-c-brand-soft: rgba(107, 157, 232, 0.1);
+  --vp-c-brand-1: #d97757;
+  --vp-c-brand-2: #e8845c;
+  --vp-c-brand-3: #c96442;
+  --vp-c-brand-soft: rgba(217, 119, 87, 0.1);
 
-  --vp-c-bg: #161616;
-  --vp-c-bg-alt: #1a1a1a;
-  --vp-c-bg-soft: #222222;
-  --vp-c-bg-mute: #2a2a2a;
-  --vp-c-bg-elv: #252525;
+  --vp-c-bg: #141413;
+  --vp-c-bg-alt: #1a1a19;
+  --vp-c-bg-soft: #252523;
+  --vp-c-bg-mute: #30302e;
+  --vp-c-bg-elv: #1e1e1c;
 
-  --vp-c-text-1: #e8e6dc;
-  --vp-c-text-2: #a8a498;
-  --vp-c-text-3: #706c62;
+  --vp-c-text-1: #faf9f5;
+  --vp-c-text-2: #b0aea5;
+  --vp-c-text-3: #87867f;
 
-  --vp-c-divider: rgba(255, 255, 255, 0.08);
-  --vp-c-border: rgba(255, 255, 255, 0.12);
+  --vp-c-divider: #30302e;
+  --vp-c-border: #30302e;
   --vp-c-gutter: rgba(255, 255, 255, 0.04);
 
-  --vp-c-tip-1: #6b9de8;
+  --vp-c-tip-1: #d97757;
   --vp-c-warning-1: #e6b422;
-  --vp-c-danger-1: #f56565;
+  --vp-c-danger-1: #e05555;
 
-  --vp-button-brand-bg: #2b5ea7;
-  --vp-button-brand-hover-bg: #3a6fb8;
-  --vp-button-brand-active-bg: #5a8fd0;
-  --vp-button-alt-bg: #2a2a2a;
-  --vp-button-alt-border: rgba(255, 255, 255, 0.1);
-  --vp-button-alt-text: #e8e6dc;
-  --vp-button-alt-hover-bg: #333333;
+  --vp-button-brand-bg: #c96442;
+  --vp-button-brand-hover-bg: #d97757;
+  --vp-button-brand-active-bg: #e8845c;
+  --vp-button-alt-bg: #30302e;
+  --vp-button-alt-border: #30302e;
+  --vp-button-alt-text: #faf9f5;
+  --vp-button-alt-hover-bg: #3d3d3a;
 }
 
 @media (min-width: 640px) {
@@ -138,22 +139,22 @@
    排版增强
    ============================================================ */
 
-/* 正文：更舒服的中文阅读 */
+/* 正文：宽松行高，编辑式阅读体验 */
 .vp-doc {
-  line-height: 1.85;
-  letter-spacing: 0.02em;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
 }
 
-/* 标题：Stripe 风格深蓝，层次分明 */
+/* 标题：暖黑，层次分明 */
 .vp-doc h1 {
   font-weight: 700;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   color: var(--vp-c-text-1);
 }
 
 .vp-doc h2 {
   font-weight: 650;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.01em;
   margin-top: 48px;
   padding-top: 24px;
   border-top: 1px solid var(--vp-c-divider);
@@ -164,12 +165,12 @@
   margin-top: 32px;
 }
 
-/* 段落间距：Mintlify 节奏感 */
+/* 段落间距 */
 .vp-doc p {
   margin: 16px 0;
 }
 
-/* 链接：品牌蓝，下划线只在 hover 出现 */
+/* 链接：赤陶色，hover 下划线 */
 .vp-doc a {
   color: var(--vp-c-brand-1);
   text-decoration: none;
@@ -182,7 +183,7 @@
 }
 
 /* ============================================================
-   表格：更专业
+   表格
    ============================================================ */
 
 .vp-doc table {
@@ -219,7 +220,7 @@
 }
 
 /* ============================================================
-   代码块：暖色调
+   代码块
    ============================================================ */
 
 .vp-doc div[class*="language-"] {
@@ -237,7 +238,7 @@
 }
 
 /* ============================================================
-   自定义容器：更精致
+   自定义容器
    ============================================================ */
 
 .vp-doc .custom-block {
@@ -247,8 +248,8 @@
 }
 
 .vp-doc .custom-block.tip {
-  border-color: var(--vp-c-brand-soft);
-  background: rgba(43, 94, 167, 0.04);
+  border-color: rgba(201, 100, 66, 0.2);
+  background: rgba(201, 100, 66, 0.04);
 }
 
 .vp-doc .custom-block.warning {
@@ -257,8 +258,8 @@
 }
 
 .vp-doc .custom-block.danger {
-  border-color: rgba(197, 48, 48, 0.2);
-  background: rgba(197, 48, 48, 0.04);
+  border-color: rgba(181, 51, 51, 0.2);
+  background: rgba(181, 51, 51, 0.04);
 }
 
 .vp-doc .custom-block.info {
@@ -267,22 +268,22 @@
 }
 
 /* ============================================================
-   导航栏：毛玻璃 + 暖底
+   导航栏：毛玻璃 + 羊皮纸
    ============================================================ */
 
 .VPNav {
-  background: rgba(248, 247, 242, 0.85) !important;
+  background: rgba(245, 244, 237, 0.85) !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--vp-c-divider) !important;
 }
 
 .dark .VPNav {
-  background: rgba(22, 22, 22, 0.85) !important;
+  background: rgba(20, 20, 19, 0.85) !important;
 }
 
 /* ============================================================
-   侧边栏：更清爽
+   侧边栏
    ============================================================ */
 
 .VPSidebar .group + .group {
@@ -304,11 +305,11 @@
   border: 1px solid var(--vp-c-border) !important;
   background: var(--vp-c-bg-elv) !important;
   border-radius: 12px !important;
-  transition: border-color 0.25s ease, transform 0.25s ease;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 
 .VPFeatures .VPFeature:hover {
-  border-color: var(--vp-c-brand-2) !important;
+  box-shadow: 0 0 0 1px #d1cfc5, rgba(0, 0, 0, 0.05) 0px 4px 24px;
   transform: translateY(-2px);
 }
 
@@ -357,7 +358,7 @@
 
 .VPButton.brand:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(43, 94, 167, 0.25);
+  box-shadow: 0 0 0 1px #c96442, rgba(201, 100, 66, 0.2) 0px 4px 16px;
 }
 
 /* ============================================================
@@ -396,7 +397,7 @@
    ============================================================ */
 
 * {
-  transition-property: color, background-color, border-color;
+  transition-property: color, background-color, border-color, box-shadow;
   transition-duration: 0.15s;
   transition-timing-function: ease;
 }
