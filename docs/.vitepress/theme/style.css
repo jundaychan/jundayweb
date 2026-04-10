@@ -393,10 +393,17 @@
 }
 
 /* ============================================================
-   全局过渡动画
+   全局过渡动画（仅内容区域，不碰 VitePress 导航/侧边栏组件）
    ============================================================ */
 
-* {
+.vp-doc,
+.vp-doc *,
+.VPHero,
+.VPHero *,
+.VPFeatures,
+.VPFeatures *,
+.VPFooter,
+.VPFooter * {
   transition-property: color, background-color, border-color, box-shadow;
   transition-duration: 0.15s;
   transition-timing-function: ease;
@@ -405,16 +412,4 @@
 /* 排除不该有过渡的元素 */
 code, pre, pre *, img, svg, video, canvas {
   transition: none !important;
-}
-
-/* 不干扰 VitePress 内置组件的动画（侧边栏、导航栏、遮罩层） */
-.VPSidebar,
-.VPSidebar *,
-.VPNavBar .curtain,
-.VPNavScreenMenuLink,
-.VPNavScreen,
-.VPNavScreen *,
-.VPLocalNav,
-.VPLocalNav * {
-  transition-property: all !important;
 }
