@@ -53,7 +53,7 @@ export default defineConfig({
         ],
       },
       {
-        text: '上手工具',
+        text: '用现成能力',
         items: [
           {
             text: 'AI工具实测',
@@ -75,26 +75,10 @@ export default defineConfig({
         ],
       },
       {
-        text: '打造能力',
+        text: '写Skill + 接MCP',
         items: [
           {
-            text: 'RAG 知识库',
-            items: [
-              { text: 'RAG 是什么', link: '/rag/index' },
-              { text: '搭建知识库', link: '/rag/build' },
-              { text: '优化和排错', link: '/rag/optimize' },
-            ],
-          },
-          {
-            text: '工作流自动化',
-            items: [
-              { text: '工作流是什么', link: '/workflow/index' },
-              { text: '平台实操指南', link: '/workflow/platforms' },
-              { text: '常用配方', link: '/workflow/recipes' },
-            ],
-          },
-          {
-            text: 'Agent Skills 教程',
+            text: 'Agent Skills（写Skill）',
             items: [
               { text: '系列概览', link: '/agent-skills/index' },
               { text: '什么是 Skills', link: '/agent-skills/what' },
@@ -105,7 +89,7 @@ export default defineConfig({
             ],
           },
           {
-            text: 'MCP 实战教程',
+            text: 'MCP 实战（接MCP）',
             items: [
               { text: '什么是 MCP', link: '/mcp/index' },
               { text: '快速上手', link: '/mcp/setup' },
@@ -114,21 +98,23 @@ export default defineConfig({
               { text: '安全须知', link: '/mcp/security' },
             ],
           },
+          {
+            text: 'RAG 知识库（给AI喂数据）',
+            items: [
+              { text: 'RAG 是什么', link: '/rag/index' },
+              { text: '搭建知识库', link: '/rag/build' },
+              { text: '优化和排错', link: '/rag/optimize' },
+            ],
+          },
         ],
       },
       {
-        text: '搭建体系',
+        text: 'Agent + 体系',
         items: [
           {
-            text: '理解 Agent',
+            text: '搭 Agent',
             items: [
               { text: 'AI Agent 是什么', link: '/concepts/agents' },
-            ],
-          },
-          {
-            text: 'Agent 搭建实战',
-            items: [
-              { text: '概览', link: '/agent-guide/index' },
               { text: '搭建第一个 Agent', link: '/agent-guide/first-agent' },
               { text: '测试和评估', link: '/agent-guide/testing' },
               { text: '上生产', link: '/agent-guide/production' },
@@ -144,7 +130,15 @@ export default defineConfig({
             ],
           },
           {
-            text: '企业落地',
+            text: '工作流编排',
+            items: [
+              { text: '工作流是什么', link: '/workflow/index' },
+              { text: '平台实操指南', link: '/workflow/platforms' },
+              { text: '常用配方', link: '/workflow/recipes' },
+            ],
+          },
+          {
+            text: '系统构建：企业落地',
             items: [
               { text: '概览', link: '/ai-landing/index' },
               { text: 'Agent篇', link: '/ai-landing/agents' },
@@ -155,7 +149,7 @@ export default defineConfig({
             ],
           },
           {
-            text: '电商AI',
+            text: '系统构建：电商AI',
             items: [
               { text: '概览', link: '/ecommerce/index' },
               { text: 'AI作图革命', link: '/ecommerce/ai-image' },

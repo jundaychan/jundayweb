@@ -271,13 +271,17 @@ features:
 ## 学习路线
 
 <div class="roadmap">
-  <div class="step"><span class="num">1</span> <a href="/roadmap#学会对话">学会对话</a></div>
+  <div class="step"><span class="num">1</span> <a href="/roadmap#学会对话">对话</a></div>
   <span class="arrow">→</span>
-  <div class="step"><span class="num">2</span> <a href="/roadmap#上手工具">上手工具</a></div>
+  <div class="step"><span class="num">2</span> <a href="/roadmap#用现成能力">用现成能力</a></div>
   <span class="arrow">→</span>
-  <div class="step"><span class="num">3</span> <a href="/roadmap#打造能力">打造能力</a></div>
+  <div class="step"><span class="num">3</span> <a href="/roadmap#写自己的-skill">写Skill</a></div>
   <span class="arrow">→</span>
-  <div class="step"><span class="num">4</span> <a href="/roadmap#搭建体系">搭建体系</a></div>
+  <div class="step"><span class="num">4</span> <a href="/roadmap#接-mcp">接MCP</a></div>
+  <span class="arrow">→</span>
+  <div class="step"><span class="num">5</span> <a href="/roadmap#搭-agent">搭Agent</a></div>
+  <span class="arrow">→</span>
+  <div class="step"><span class="num">6</span> <a href="/roadmap#系统构建">系统构建</a></div>
 </div>
 
 <p style="text-align:center;margin-top:12px;"><a href="/roadmap" style="color:var(--vp-c-brand-1);font-weight:600;font-size:14px;">查看完整学习路线 →</a></p>
