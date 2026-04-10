@@ -271,14 +271,14 @@
    导航栏：毛玻璃 + 羊皮纸
    ============================================================ */
 
-.VPNav {
+.VPNavBar {
   background: rgba(245, 244, 237, 0.85) !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--vp-c-divider) !important;
 }
 
-.dark .VPNav {
+.dark .VPNavBar {
   background: rgba(20, 20, 19, 0.85) !important;
 }
 
