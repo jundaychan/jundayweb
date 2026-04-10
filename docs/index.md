@@ -47,130 +47,179 @@ features:
 .pain-section {
   max-width: 960px;
   margin: 0 auto;
-  padding: 48px 24px;
+  padding: 56px 24px;
 }
 .pain-section h2 {
   text-align: center;
-  font-size: 28px;
-  margin-bottom: 12px;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--vp-c-text-1);
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
 }
 .pain-section .subtitle {
   text-align: center;
-  color: var(--vp-c-text-2);
+  color: var(--vp-c-text-3);
   margin-bottom: 40px;
-  font-size: 16px;
+  font-size: 15px;
 }
 .pain-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-bottom: 48px;
+  gap: 16px;
+  margin-bottom: 56px;
 }
 @media (max-width: 640px) {
   .pain-grid { grid-template-columns: 1fr; }
 }
 .pain-card {
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 12px;
+  border: 1px solid var(--vp-c-border);
+  border-radius: 10px;
   padding: 24px;
-  background: var(--vp-c-bg-soft);
+  background: var(--vp-c-bg-elv);
+  transition: border-color 0.25s ease, transform 0.25s ease;
 }
-.pain-card h3 { margin: 0 0 8px 0; font-size: 18px; }
-.pain-card p { margin: 0; color: var(--vp-c-text-2); font-size: 14px; line-height: 1.6; }
+.pain-card:hover {
+  border-color: var(--vp-c-brand-2);
+  transform: translateY(-2px);
+}
+.pain-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  font-weight: 650;
+  color: var(--vp-c-text-1);
+}
+.pain-card p {
+  margin: 0;
+  color: var(--vp-c-text-2);
+  font-size: 14px;
+  line-height: 1.7;
+}
 .data-bar {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 48px;
   padding: 40px 24px;
-  background: var(--vp-c-bg-soft);
+  background: var(--vp-c-bg-elv);
+  border: 1px solid var(--vp-c-border);
   border-radius: 12px;
-  margin-bottom: 48px;
+  margin-bottom: 56px;
 }
 .data-item { text-align: center; }
 .data-item .number {
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 40px;
+  font-weight: 800;
   color: var(--vp-c-brand-1);
   display: block;
+  letter-spacing: -0.02em;
 }
 .data-item .label {
-  font-size: 14px;
-  color: var(--vp-c-text-2);
-  margin-top: 4px;
+  font-size: 13px;
+  color: var(--vp-c-text-3);
+  margin-top: 6px;
+  line-height: 1.5;
+}
+.data-item .label small {
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
+  color: var(--vp-c-text-3);
 }
 .about-me {
-  padding: 40px 24px;
-  background: var(--vp-c-bg-soft);
+  padding: 36px 32px;
+  background: var(--vp-c-bg-elv);
+  border: 1px solid var(--vp-c-border);
   border-radius: 12px;
-  margin-bottom: 48px;
+  margin-bottom: 56px;
   display: flex;
   gap: 32px;
   align-items: center;
 }
 @media (max-width: 640px) {
-  .about-me { flex-direction: column; text-align: center; }
+  .about-me { flex-direction: column; text-align: center; padding: 28px 20px; }
 }
 .about-me .qr-wrap {
   flex-shrink: 0;
 }
 .about-me .qr-wrap img {
-  width: 180px;
-  height: 180px;
-  border-radius: 12px;
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
   object-fit: cover;
+  border: 1px solid var(--vp-c-divider);
 }
 .about-me .info h3 {
   margin: 0 0 12px 0;
   font-size: 20px;
+  font-weight: 700;
+  color: var(--vp-c-text-1);
 }
 .about-me .info p {
   margin: 0 0 8px 0;
   color: var(--vp-c-text-2);
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 .about-me .wechat-id {
   display: inline-block;
-  margin-top: 8px;
-  padding: 6px 16px;
+  margin-top: 12px;
+  padding: 8px 20px;
   background: var(--vp-c-brand-1);
   color: white;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 14px;
   font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.about-me .wechat-id:hover {
+  background: var(--vp-button-brand-hover-bg);
+  transform: translateY(-1px);
 }
 .roadmap {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
-  margin-bottom: 48px;
+  gap: 12px;
+  margin-bottom: 56px;
 }
 .roadmap .step {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 12px 20px;
-  border: 1px solid var(--vp-c-divider);
+  padding: 10px 18px;
+  border: 1px solid var(--vp-c-border);
   border-radius: 8px;
-  background: var(--vp-c-bg-soft);
+  background: var(--vp-c-bg-elv);
   font-size: 14px;
+  font-weight: 500;
+  transition: border-color 0.2s ease;
+}
+.roadmap .step:hover {
+  border-color: var(--vp-c-brand-2);
 }
 .roadmap .step .num {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   background: var(--vp-c-brand-1);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
   flex-shrink: 0;
 }
-.roadmap .arrow { color: var(--vp-c-text-3); font-size: 20px; }
+.roadmap .step a {
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+}
+.roadmap .arrow {
+  color: var(--vp-c-text-3);
+  font-size: 18px;
+  user-select: none;
+}
 </style>
 
 <div class="pain-section">

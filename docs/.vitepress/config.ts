@@ -77,6 +77,22 @@ export default defineConfig({
         text: '打造能力',
         items: [
           {
+            text: 'RAG 知识库',
+            items: [
+              { text: 'RAG 是什么', link: '/rag/index' },
+              { text: '搭建知识库', link: '/rag/build' },
+              { text: '优化和排错', link: '/rag/optimize' },
+            ],
+          },
+          {
+            text: '工作流自动化',
+            items: [
+              { text: '工作流是什么', link: '/workflow/index' },
+              { text: '平台实操指南', link: '/workflow/platforms' },
+              { text: '常用配方', link: '/workflow/recipes' },
+            ],
+          },
+          {
             text: 'Agent Skills 教程',
             items: [
               { text: '系列概览', link: '/agent-skills/index' },
@@ -84,6 +100,7 @@ export default defineConfig({
               { text: '如何设计 Skills', link: '/agent-skills/design' },
               { text: '手把手搭建', link: '/agent-skills/build' },
               { text: '实战案例', link: '/agent-skills/cases' },
+              { text: '热门 Skills 推荐', link: '/agent-skills/recommended' },
             ],
           },
           {
@@ -149,6 +166,8 @@ export default defineConfig({
         ],
       },
       { text: '常见问题', link: '/faq' },
+      { text: 'AI 周报', link: '/digest' },
+      { text: '信息源', link: '/sources' },
       { text: '关于', link: '/about' },
     ],
 
@@ -378,6 +397,42 @@ export default defineConfig({
       ],
 
       // === 阶段三：打造能力 ===
+      '/rag/': [
+        {
+          text: 'RAG 知识库教程',
+          items: [
+            { text: 'RAG 是什么', link: '/rag/index' },
+            { text: '搭建知识库', link: '/rag/build' },
+            { text: '优化和排错', link: '/rag/optimize' },
+          ],
+        },
+        {
+          text: '相关内容',
+          items: [
+            { text: '工作流自动化', link: '/workflow/index' },
+            { text: 'Agent Skills', link: '/agent-skills/index' },
+            { text: 'Agent 搭建', link: '/agent-guide/index' },
+          ],
+        },
+      ],
+      '/workflow/': [
+        {
+          text: '工作流自动化',
+          items: [
+            { text: '工作流是什么', link: '/workflow/index' },
+            { text: '平台实操指南', link: '/workflow/platforms' },
+            { text: '常用配方', link: '/workflow/recipes' },
+          ],
+        },
+        {
+          text: '相关内容',
+          items: [
+            { text: 'RAG 知识库', link: '/rag/index' },
+            { text: 'Agent 搭建', link: '/agent-guide/index' },
+            { text: 'Agent Harness', link: '/agent-harness/index' },
+          ],
+        },
+      ],
       '/mcp/': [
         {
           text: 'MCP 实战教程',
@@ -406,6 +461,7 @@ export default defineConfig({
             { text: '如何设计 Skills', link: '/agent-skills/design' },
             { text: '手把手搭建', link: '/agent-skills/build' },
             { text: '实战案例', link: '/agent-skills/cases' },
+            { text: '热门 Skills 推荐', link: '/agent-skills/recommended' },
           ],
         },
       ],

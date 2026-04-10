@@ -88,6 +88,14 @@ docs/
 │   ├── deployment.md
 │   ├── security.md
 │   └── cutting-edge.md
+├── rag/                         # RAG 知识库教程（原理、搭建、优化）
+│   ├── index.md                 # RAG 是什么、平台对比（Dify/RAGFlow/阿里百炼）
+│   ├── build.md                 # 三平台搭建实操（阿里百炼/Dify/RAGFlow）
+│   └── optimize.md              # 7 个失败点、成本控制、评估方法
+├── workflow/                    # 工作流自动化教程
+│   ├── index.md                 # 工作流 vs Agent 对比、8 大自动化场景
+│   ├── platforms.md             # n8n/Dify/飞书/钉钉宜搭 实操指南
+│   └── recipes.md               # 6 个常用工作流配方模板
 ├── models/                      # 模型选择指南（按类型分）
 │   ├── index.md
 │   ├── text.md
@@ -187,6 +195,9 @@ push to `main` 分支即自动触发 Cloudflare Pages 构建部署。
 | Agent Harness | Anthropic 4篇官方博客（Building Effective Agents、Effective Harnesses、Harness Design、Context Engineering） |
 | Agent Skills | Anthropic Tool Use 文档、OpenAI Function Calling、Coze 2.0、Dify、5 Agent Skill Design Patterns |
 | MCP 教程 | MCP 官方规范 modelcontextprotocol.io、Pinterest/Block/Bloomberg 实践、百度/阿里/腾讯/讯飞国内平台 |
+| RAG 知识库 | Anthropic Contextual Retrieval、Dify/RAGFlow/FastGPT/MaxKB 文档、阿里百炼/百度千帆 |
+| 工作流自动化 | n8n 文档（107K stars）、Dify Workflow、飞书/钉钉宜搭/腾讯微搭、IDC 2025 低代码报告 |
+| Agent 搭建 | Coze/Dify/n8n 实操、Claude Managed Agents（2026.4.8）、LangChain 2026 State of AI Agents |
 | 电商AI实战 | 700页电商AI课程PPT（Kimi总结） |
 | 工具实测 | 各平台官网 + 第三方评测（2025年数据） |
 | FAQ-版权 | 北京互联网法院2023判决、GB 45438-2025 |

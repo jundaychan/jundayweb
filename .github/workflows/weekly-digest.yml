@@ -1,0 +1,40 @@
+name: Weekly AI Digest
+
+on:
+  # 每周一早上 8 点（北京时间）自动运行
+  schedule:
+    - cron: '0 0 * * 1'  # UTC 00:00 Monday = 北京时间周一 08:00
+  # 手动触发
+  workflow_dispatch:
+
+jobs:
+  generate-digest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate digest
+        run: node scripts/fetch-ai-digest.mjs
+
+      - name: Check for changes
+        id: check
+        run: |
+          if git diff --quiet docs/digest.md 2>/dev/null; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/digest.md
+          git commit -m "chore: update weekly AI digest $(date +%Y-%m-%d)"
+          git push

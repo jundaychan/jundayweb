@@ -1,33 +1,125 @@
+/*
+ * 设计系统：Claude 暖底色 + Stripe 信任蓝 + Mintlify 文档节奏
+ *
+ * 设计原则：
+ * 1. 暖底色（#f8f7f2）— 不是冷冰冰的技术文档，是"有温度的专家"
+ * 2. 深蓝标题（#1a2b4a）— 信任感，像金融级产品
+ * 3. 商业蓝品牌色 — 支付宝蓝、微信蓝的心智：专业 + 可靠
+ * 4. 微妙边框，不用阴影 — 干净、文档感
+ * 5. 中文系统字体 — 零外部请求，中国访问零延迟
+ */
+
+/* ============================================================
+   色彩系统
+   ============================================================ */
+
 :root {
+  /* --- 字体 --- */
   --vp-font-family-base: -apple-system, BlinkMacSystemFont, "PingFang SC",
     "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
   --vp-font-family-mono: "JetBrains Mono", "Fira Code", Menlo, Monaco,
     Consolas, "Courier New", monospace;
 
-  --vp-c-brand-1: #3451b2;
-  --vp-c-brand-2: #3a5ccc;
-  --vp-c-brand-3: #5672cd;
-}
+  /* --- 品牌色：商业蓝 --- */
+  --vp-c-brand-1: #2b5ea7;
+  --vp-c-brand-2: #3a6fb8;
+  --vp-c-brand-3: #5a8fd0;
+  --vp-c-brand-soft: rgba(43, 94, 167, 0.08);
 
-.dark {
-  --vp-c-brand-1: #a8b1ff;
-  --vp-c-brand-2: #929cf5;
-  --vp-c-brand-3: #7c87eb;
-}
+  /* --- 背景色：暖底色（Claude 启发）--- */
+  --vp-c-bg: #f8f7f2;
+  --vp-c-bg-alt: #f3f1ea;
+  --vp-c-bg-soft: #efeee6;
+  --vp-c-bg-mute: #e8e6dc;
+  --vp-c-bg-elv: #ffffff;
 
-:root {
+  /* --- 文字色：Stripe 深蓝灰 --- */
+  --vp-c-text-1: #1a2b4a;
+  --vp-c-text-2: #4a5568;
+  --vp-c-text-3: #8892a4;
+
+  /* --- 边框：Mintlify 微妙边框 --- */
+  --vp-c-divider: rgba(30, 40, 60, 0.08);
+  --vp-c-border: rgba(30, 40, 60, 0.12);
+  --vp-c-gutter: rgba(30, 40, 60, 0.04);
+
+  /* --- 功能色 --- */
+  --vp-c-tip-1: #2b5ea7;
+  --vp-c-tip-2: rgba(43, 94, 167, 0.14);
+  --vp-c-tip-3: rgba(43, 94, 167, 0.08);
+  --vp-c-warning-1: #b8860b;
+  --vp-c-warning-2: rgba(184, 134, 11, 0.14);
+  --vp-c-warning-3: rgba(184, 134, 11, 0.08);
+  --vp-c-danger-1: #c53030;
+  --vp-c-danger-2: rgba(197, 48, 48, 0.14);
+  --vp-c-danger-3: rgba(197, 48, 48, 0.08);
+
+  /* --- Hero 渐变 --- */
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(
-    120deg,
-    #3451b2 30%,
-    #5672cd
+  --vp-home-hero-name-background: linear-gradient(
+    135deg,
+    #1a2b4a 0%,
+    #2b5ea7 50%,
+    #5a8fd0 100%
   );
   --vp-home-hero-image-background-image: linear-gradient(
     -45deg,
-    #3451b2 50%,
-    #5672cd 50%
+    #2b5ea7 50%,
+    #5a8fd0 50%
   );
   --vp-home-hero-image-filter: blur(44px);
+
+  /* --- 按钮 --- */
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #ffffff;
+  --vp-button-brand-bg: #2b5ea7;
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #ffffff;
+  --vp-button-brand-hover-bg: #234e8c;
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: #ffffff;
+  --vp-button-brand-active-bg: #1c4075;
+
+  --vp-button-alt-border: rgba(30, 40, 60, 0.12);
+  --vp-button-alt-text: #1a2b4a;
+  --vp-button-alt-bg: #efeee6;
+  --vp-button-alt-hover-border: rgba(30, 40, 60, 0.18);
+  --vp-button-alt-hover-text: #1a2b4a;
+  --vp-button-alt-hover-bg: #e8e6dc;
+}
+
+/* --- Dark Mode --- */
+.dark {
+  --vp-c-brand-1: #6b9de8;
+  --vp-c-brand-2: #5a8fd0;
+  --vp-c-brand-3: #4a7fc0;
+  --vp-c-brand-soft: rgba(107, 157, 232, 0.1);
+
+  --vp-c-bg: #161616;
+  --vp-c-bg-alt: #1a1a1a;
+  --vp-c-bg-soft: #222222;
+  --vp-c-bg-mute: #2a2a2a;
+  --vp-c-bg-elv: #252525;
+
+  --vp-c-text-1: #e8e6dc;
+  --vp-c-text-2: #a8a498;
+  --vp-c-text-3: #706c62;
+
+  --vp-c-divider: rgba(255, 255, 255, 0.08);
+  --vp-c-border: rgba(255, 255, 255, 0.12);
+  --vp-c-gutter: rgba(255, 255, 255, 0.04);
+
+  --vp-c-tip-1: #6b9de8;
+  --vp-c-warning-1: #e6b422;
+  --vp-c-danger-1: #f56565;
+
+  --vp-button-brand-bg: #2b5ea7;
+  --vp-button-brand-hover-bg: #3a6fb8;
+  --vp-button-brand-active-bg: #5a8fd0;
+  --vp-button-alt-bg: #2a2a2a;
+  --vp-button-alt-border: rgba(255, 255, 255, 0.1);
+  --vp-button-alt-text: #e8e6dc;
+  --vp-button-alt-hover-bg: #333333;
 }
 
 @media (min-width: 640px) {
@@ -40,4 +132,276 @@
   :root {
     --vp-home-hero-image-filter: blur(68px);
   }
+}
+
+/* ============================================================
+   排版增强
+   ============================================================ */
+
+/* 正文：更舒服的中文阅读 */
+.vp-doc {
+  line-height: 1.85;
+  letter-spacing: 0.02em;
+}
+
+/* 标题：Stripe 风格深蓝，层次分明 */
+.vp-doc h1 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--vp-c-text-1);
+}
+
+.vp-doc h2 {
+  font-weight: 650;
+  letter-spacing: -0.005em;
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+.vp-doc h3 {
+  font-weight: 600;
+  margin-top: 32px;
+}
+
+/* 段落间距：Mintlify 节奏感 */
+.vp-doc p {
+  margin: 16px 0;
+}
+
+/* 链接：品牌蓝，下划线只在 hover 出现 */
+.vp-doc a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.vp-doc a:hover {
+  border-bottom-color: var(--vp-c-brand-1);
+}
+
+/* ============================================================
+   表格：更专业
+   ============================================================ */
+
+.vp-doc table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--vp-c-border);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.vp-doc table th {
+  background: var(--vp-c-bg-soft);
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  border-bottom: 1px solid var(--vp-c-border);
+  padding: 10px 14px;
+  text-align: left;
+  font-size: 0.9em;
+}
+
+.vp-doc table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--vp-c-divider);
+  font-size: 0.9em;
+}
+
+.vp-doc table tr:last-child td {
+  border-bottom: none;
+}
+
+.vp-doc table tr:hover td {
+  background: var(--vp-c-bg-soft);
+}
+
+/* ============================================================
+   代码块：暖色调
+   ============================================================ */
+
+.vp-doc div[class*="language-"] {
+  border: 1px solid var(--vp-c-border);
+  border-radius: 8px;
+}
+
+.vp-doc :not(pre) > code {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.88em;
+  color: var(--vp-c-brand-1);
+}
+
+/* ============================================================
+   自定义容器：更精致
+   ============================================================ */
+
+.vp-doc .custom-block {
+  border-radius: 8px;
+  border: 1px solid var(--vp-c-border);
+  padding: 16px 20px;
+}
+
+.vp-doc .custom-block.tip {
+  border-color: var(--vp-c-brand-soft);
+  background: rgba(43, 94, 167, 0.04);
+}
+
+.vp-doc .custom-block.warning {
+  border-color: rgba(184, 134, 11, 0.2);
+  background: rgba(184, 134, 11, 0.04);
+}
+
+.vp-doc .custom-block.danger {
+  border-color: rgba(197, 48, 48, 0.2);
+  background: rgba(197, 48, 48, 0.04);
+}
+
+.vp-doc .custom-block.info {
+  border-color: var(--vp-c-border);
+  background: var(--vp-c-bg-soft);
+}
+
+/* ============================================================
+   导航栏：毛玻璃 + 暖底
+   ============================================================ */
+
+.VPNav {
+  background: rgba(248, 247, 242, 0.85) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--vp-c-divider) !important;
+}
+
+.dark .VPNav {
+  background: rgba(22, 22, 22, 0.85) !important;
+}
+
+/* ============================================================
+   侧边栏：更清爽
+   ============================================================ */
+
+.VPSidebar .group + .group {
+  border-top: 1px solid var(--vp-c-divider);
+  padding-top: 10px;
+}
+
+/* 当前页面高亮 */
+.VPSidebarItem.is-active > .item .link > .text {
+  color: var(--vp-c-brand-1);
+  font-weight: 600;
+}
+
+/* ============================================================
+   Feature 卡片（首页）
+   ============================================================ */
+
+.VPFeatures .VPFeature {
+  border: 1px solid var(--vp-c-border) !important;
+  background: var(--vp-c-bg-elv) !important;
+  border-radius: 12px !important;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.VPFeatures .VPFeature:hover {
+  border-color: var(--vp-c-brand-2) !important;
+  transform: translateY(-2px);
+}
+
+.VPFeature .title {
+  color: var(--vp-c-text-1) !important;
+  font-weight: 650 !important;
+}
+
+.VPFeature .details {
+  color: var(--vp-c-text-2) !important;
+  line-height: 1.7 !important;
+}
+
+.VPFeature .link-text {
+  color: var(--vp-c-brand-1) !important;
+}
+
+/* ============================================================
+   Hero 区域
+   ============================================================ */
+
+.VPHero .name {
+  font-weight: 800 !important;
+  letter-spacing: -0.02em;
+}
+
+.VPHero .text {
+  color: var(--vp-c-text-1) !important;
+  font-weight: 600 !important;
+}
+
+.VPHero .tagline {
+  color: var(--vp-c-text-2) !important;
+  line-height: 1.8 !important;
+}
+
+/* ============================================================
+   按钮增强
+   ============================================================ */
+
+.VPButton {
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease !important;
+}
+
+.VPButton.brand:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(43, 94, 167, 0.25);
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+
+.VPFooter {
+  border-top: 1px solid var(--vp-c-divider) !important;
+  background: var(--vp-c-bg-alt) !important;
+}
+
+/* ============================================================
+   滚动条（WebKit）
+   ============================================================ */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-text-3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-text-2);
+}
+
+/* ============================================================
+   全局过渡动画
+   ============================================================ */
+
+* {
+  transition-property: color, background-color, border-color;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+/* 排除不该有过渡的元素 */
+code, pre, pre *, img, svg, video, canvas {
+  transition: none !important;
 }
