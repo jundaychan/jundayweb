@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 学习路线信息图</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #f0efe8;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.card {
+  width: 820px;
+  background: #faf9f4;
+  border-radius: 24px;
+  padding: 56px 52px 48px;
+  box-shadow: 0 2px 40px rgba(30,40,60,0.08);
+}
+
+/* Header */
+.header {
+  margin-bottom: 40px;
+}
+.header .label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2b5ea7;
+  background: rgba(43,94,167,0.08);
+  padding: 4px 12px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}
+.header h1 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #1a2b4a;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+}
+.header .subtitle {
+  font-size: 15px;
+  color: #8892a4;
+  line-height: 1.6;
+}
+
+/* Wrong path */
+.wrong-path {
+  background: #f3f1ea;
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin-bottom: 28px;
+  position: relative;
+}
+.wrong-path::before {
+  content: '✕';
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #c53030;
+  background: rgba(197,48,48,0.08);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrong-path h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #8892a4;
+  margin-bottom: 14px;
+  letter-spacing: 0.02em;
+}
+.wrong-flow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.wrong-flow .step {
+  padding: 8px 16px;
+  background: #e8e6dc;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #8892a4;
+  text-decoration: line-through;
+  text-decoration-color: rgba(197,48,48,0.4);
+}
+.wrong-flow .arrow {
+  color: #c5c0b4;
+  font-size: 16px;
+}
+
+/* Right path */
+.right-path {
+  background: linear-gradient(135deg, rgba(43,94,167,0.04), rgba(90,143,208,0.06));
+  border: 2px solid rgba(43,94,167,0.15);
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 36px;
+}
+.right-path h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2b5ea7;
+  margin-bottom: 20px;
+  letter-spacing: 0.02em;
+}
+
+.right-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.right-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 12px 0;
+}
+.right-step:not(:last-child) {
+  border-bottom: 1px solid rgba(43,94,167,0.06);
+}
+
+.step-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 800;
+  color: white;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.step-1 .step-num { background: #2b5ea7; }
+.step-2 .step-num { background: #3a6fb8; }
+.step-3 .step-num { background: #2e7d32; }
+.step-4 .step-num { background: #e65100; }
+.step-5 .step-num { background: #6a1b9a; }
+.step-6 .step-num { background: #1a2b4a; }
+
+.step-content h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a2b4a;
+  margin-bottom: 3px;
+}
+.step-content p {
+  font-size: 13px;
+  color: #8892a4;
+  line-height: 1.5;
+}
+.step-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+.tag-easy { background: rgba(46,125,50,0.1); color: #2e7d32; }
+.tag-hard { background: rgba(230,81,0,0.1); color: #e65100; }
+
+/* Insight section */
+.insight {
+  margin-bottom: 36px;
+}
+.insight-box {
+  background: #1a2b4a;
+  border-radius: 14px;
+  padding: 28px 30px;
+  color: white;
+}
+.insight-box h3 {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.08em;
+  margin-bottom: 14px;
+}
+.insight-main {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+}
+.insight-main em {
+  font-style: normal;
+  color: #6b9de8;
+}
+.insight-sub {
+  font-size: 14px;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.7;
+}
+
+/* Comparison */
+.compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+.compare-card {
+  border-radius: 12px;
+  padding: 22px 24px;
+}
+.compare-left {
+  background: rgba(46,125,50,0.06);
+  border: 1px solid rgba(46,125,50,0.15);
+}
+.compare-right {
+  background: rgba(230,81,0,0.04);
+  border: 1px solid rgba(230,81,0,0.12);
+}
+.compare-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.compare-left h4 { color: #2e7d32; }
+.compare-right h4 { color: #e65100; }
+.compare-card .desc {
+  font-size: 13px;
+  color: #8892a4;
+  margin-bottom: 12px;
+}
+.compare-card ul {
+  list-style: none;
+  padding: 0;
+}
+.compare-card li {
+  font-size: 13px;
+  color: #4a5568;
+  padding: 4px 0;
+  line-height: 1.5;
+}
+.compare-left li::before { content: '✓ '; color: #2e7d32; font-weight: 700; }
+.compare-right li::before { content: '✕ '; color: #e65100; font-weight: 700; }
+
+/* Polanyi quote */
+.polanyi {
+  border-left: 3px solid #2b5ea7;
+  padding: 16px 20px;
+  background: rgba(43,94,167,0.03);
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 32px;
+}
+.polanyi p {
+  font-size: 14px;
+  color: #4a5568;
+  line-height: 1.8;
+  font-style: italic;
+}
+.polanyi .author {
+  font-size: 12px;
+  color: #8892a4;
+  margin-top: 8px;
+  font-style: normal;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(30,40,60,0.06);
+}
+.footer .brand {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a2b4a;
+}
+.footer .url {
+  font-size: 13px;
+  color: #8892a4;
+}
+</style>
+</head>
+<body>
+<div class="card">
+
+  <div class="header">
+    <div class="label">AI 学习路线</div>
+    <h1>普通人的AI进化路径<br/>跟你想的不一样</h1>
+    <p class="subtitle">为什么写Skill比设计工作流简单？为什么接MCP比拖低代码容易？</p>
+  </div>
+
+  <div class="wrong-path">
+    <h3>大多数人以为的路径</h3>
+    <div class="wrong-flow">
+      <span class="step">对话</span>
+      <span class="arrow">→</span>
+      <span class="step">工作流编排</span>
+      <span class="arrow">→</span>
+      <span class="step">Agent</span>
+      <span class="arrow">→</span>
+      <span class="step">系统</span>
+    </div>
+  </div>
+
+  <div class="right-path">
+    <h3>实际走下来的路径</h3>
+    <div class="right-flow">
+      <div class="right-step step-1">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>学会对话</h4>
+          <p>理解AI是什么，学会给它下指令</p>
+        </div>
+      </div>
+      <div class="right-step step-2">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>用现成能力</h4>
+          <p>选对工具，处理实际业务</p>
+        </div>
+      </div>
+      <div class="right-step step-3">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>写自己的 Skill <span class="step-tag tag-easy">比想象中简单</span></h4>
+          <p>把你脑子里"知道怎么做但从没写下来"的经验写成文档</p>
+        </div>
+      </div>
+      <div class="right-step step-4">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h4>接 MCP <span class="step-tag tag-easy">边界清晰</span></h4>
+          <p>告诉AI可以用什么工具，输入什么输出什么</p>
+        </div>
+      </div>
+      <div class="right-step step-5">
+        <div class="step-num">5</div>
+        <div class="step-content">
+          <h4>搭 Agent</h4>
+          <p>让AI自主决策和执行任务</p>
+        </div>
+      </div>
+      <div class="right-step step-6">
+        <div class="step-num">6</div>
+        <div class="step-content">
+          <h4>系统构建</h4>
+          <p>用AI重构业务流程和组织</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="compare">
+    <div class="compare-card compare-left">
+      <h4>赋能（声明式）</h4>
+      <p class="desc">告诉AI"我会什么"</p>
+      <ul>
+        <li>写Skill = 写文档</li>
+        <li>接MCP = 定义接口</li>
+        <li>确定性高，边界清晰</li>
+        <li>把默会知识变成AI能力</li>
+      </ul>
+    </div>
+    <div class="compare-card compare-right">
+      <h4>编排（命令式）</h4>
+      <p class="desc">替AI设计"该怎么做"</p>
+      <ul>
+        <li>要处理所有失败路径</li>
+        <li>并发、状态、异常</li>
+        <li>得撞过才知道哪里有坑</li>
+        <li>正在被Agent吃掉</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="insight">
+    <div class="insight-box">
+      <h3>核心洞察</h3>
+      <div class="insight-main">
+        声明"<em>我会什么</em>"<br/>比设计"该怎么做"简单。<br/><em>赋能</em>比编排更有杠杆。
+      </div>
+      <p class="insight-sub">在AI native时代，你不该操心流程，你该操心给AI配什么能力。工作流编排正在被Agent吃掉。</p>
+    </div>
+  </div>
+
+  <div class="polanyi">
+    <p>我们知道的永远比我们能说出来的多。写Skill就是在做这件事——把默会知识变成AI能用的显性知识。而工作流编排之所以难，恰恰因为"预判所有意外"的能力，本身就是最难言传的默会知识。</p>
+    <div class="author">— Michael Polanyi 默会知识理论</div>
+  </div>
+
+  <div class="footer">
+    <span class="brand">Junday 的 AI 商业指南</span>
+    <span class="url">junday.net/roadmap</span>
+  </div>
+
+</div>
+</body>
+</html>
