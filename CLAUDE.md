@@ -174,6 +174,11 @@ push to `main` 分支即自动触发 Cloudflare Pages 构建部署。
 - **图片**：放在 `docs/public/` 目录，随站点一起部署到 CF CDN
 - **搜索**：VitePress 内置 local search，不依赖 Algolia
 
+## 部署规则
+
+- **内容更新后直接部署**：完成内容修改并构建成功后，直接 commit + push，不需要询问用户确认
+- 工作流：编辑 → `npm run docs:build` → `git add` → `git commit` → `git push`
+
 ## 已知问题和注意事项
 
 1. **YAML frontmatter 不要放 emoji**：VitePress 编译时 emoji 会变成 `��` 乱码。如果需要 emoji 放在 markdown 正文里

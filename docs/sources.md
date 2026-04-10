@@ -94,21 +94,118 @@ AI 行业信息噪音极大。一条 OpenAI 的博客发出来，24 小时内会
 
 ---
 
-## 第五梯队：播客 / YouTube（需翻墙）
+## 第五梯队：YouTube 博主
 
-适合通勤、做饭时听。深度对话比文字文章信息密度更高。
+### AI 工具评测 + 实操类（适合老板和运营）
 
-| 频道 | 平台 | 为什么要看 | 频率 |
-|------|------|-----------|------|
-| **Lex Fridman Podcast** | YouTube / 播客 | 长对话（2-4 小时）采访 AI 顶级人物。Altman、Hassabis、Musk 都上过 | 周更 |
-| **Dwarkesh Patel** | YouTube / 播客 | 新生代最犀利的 AI 采访者，问题尖锐，嘉宾级别高（Dario Amodei、Ilya Sutskever） | 不定期 |
-| **Hard Fork (NYT)** | 播客 | 纽约时报科技记者主持，AI 新闻的主流媒体视角，轻松好听 | 周更 |
-| **3Blue1Brown** | YouTube | 用动画解释神经网络和数学原理，理解 AI 底层逻辑的最佳入门 | 不定期 |
-| **Two Minute Papers** | YouTube | 2 分钟讲一篇 AI 论文，视觉效果惊人 | 周更 |
+| 频道 | 订阅数 | 为什么要看 | 频率 | 需翻墙 |
+|------|--------|-----------|------|--------|
+| **[Matt Wolfe](https://youtube.com/@maboroshi)** | 69 万 | AI 工具评测 + 行业趋势，FutureTools.io 创始人，通俗易懂 | 周更 2-3 期 | 是 |
+| **[Matthew Berman](https://youtube.com/@matthewberman)** | 53 万 | AI 新闻 + 模型实测演示，风格清晰有条理，几乎日更 | 日更 | 是 |
+| **[The AI Advantage](https://youtube.com/@AIAdvantage)** | 26 万 | 专注 ChatGPT / 自动化工作流的实用教学，无废话风格 | 周更 2-3 期 | 是 |
+| **[Nate Herk](https://youtube.com/@NateHerk)** | 60 万 | AI 自动化 + AI 创业，教怎么用 AI 赚钱 | 周更 2-3 期 | 是 |
+| **[David Ondrej](https://youtube.com/@DavidOndrej)** | 32 万 | AI 商业应用 + 提示词技巧，自己用 AI 做到 $45K/月 | 周更 2-3 期 | 是 |
+
+### 深度访谈 + 行业洞察类
+
+| 频道 | 订阅数 | 为什么要看 | 频率 | 需翻墙 |
+|------|--------|-----------|------|--------|
+| **[Dwarkesh Patel](https://youtube.com/@DwarkeshPatel)** | 124 万 | 新生代最犀利的 AI 采访者，嘉宾含 Dario Amodei、Ilya Sutskever | 不定期 | 是 |
+| **[Lex Fridman](https://youtube.com/@lexfridman)** | 数百万 | 超长深度对谈（2-4 小时），Altman、Hassabis、Musk 都上过 | 周更 | 是 |
+| **[AI Explained](https://youtube.com/@AIExplained)** | 33 万 | 深度解析 AI 突破和模型发布，调查式风格，通俗但有深度 | 月更 2-4 期 | 是 |
+| **[Wes Roth](https://youtube.com/@WesRoth)** | 31 万 | AI 新闻深度分析，涵盖 AGI、机器人等前沿话题 | 周更 3-5 期 | 是 |
+
+### 技术教育类（给技术团队看）
+
+| 频道 | 订阅数 | 为什么要看 | 频率 | 需翻墙 |
+|------|--------|-----------|------|--------|
+| **[Fireship](https://youtube.com/@Fireship)** | 400 万 | 高能快节奏，"100 秒讲 X"系列，复杂技术讲得幽默有趣 | 周更 | 是 |
+| **[3Blue1Brown](https://youtube.com/@3blue1brown)** | 820 万 | 用动画解释神经网络和数学原理，理解 AI 底层逻辑的最佳入门 | 不定期 | 是 |
+| **[Two Minute Papers](https://youtube.com/@TwoMinutePapers)** | 172 万 | 2 分钟讲一篇 AI 论文，视觉效果惊人 | 周更 | 是 |
+| **[DeepLearning.AI](https://youtube.com/@Deeplearningai)** | 350 万 | 吴恩达团队，系统化 AI 课程 | 周更 | 是 |
+| **[Sam Witteveen](https://youtube.com/@SamWitteveen)** | 11.5 万 | Google 开发者专家，Agent / LLM 实战教程，代码级讲解 | 周更 | 是 |
+
+### 中文 YouTube 频道
+
+| 频道 | 订阅数 | 为什么要看 | 频率 |
+|------|--------|-----------|------|
+| **[李宏毅](https://youtube.com/@HungyiLeeNTU)** | 18.7 万 | 台大教授，机器学习 / 生成式 AI，中文讲解，学术但通俗 | 随课程更新 |
+| **[跟李沐学AI](https://youtube.com/@mu_li)** | 30 万+ | 亚马逊资深首席科学家，精讲 AI 论文，中文讲解 | 不定期 |
+
+::: tip 最低限度
+只看一个选 **Matt Wolfe**（AI 工具最全），想深度理解行业加 **Dwarkesh Patel**。
+:::
 
 ---
 
-## 第六梯队：论文追踪（技术团队用）
+## 第六梯队：X (Twitter) 上的 AI 大佬
+
+X 是 AI 行业信息最快的地方。模型发布、行业辩论、一手观点，经常比新闻早几小时。
+
+### AI 行业领袖（一手动态）
+
+| 人物 | 账号 | 身份 | 为什么要关注 | 需翻墙 |
+|------|------|------|-------------|--------|
+| **Sam Altman** | [@sama](https://x.com/sama) | OpenAI CEO | 行业方向、产品发布，420 万粉丝 | 是 |
+| **Andrej Karpathy** | [@karpathy](https://x.com/karpathy) | 前 Tesla AI 总监 / OpenAI 创始成员 | 深度学习直觉、教育内容，每条都值得读 | 是 |
+| **Yann LeCun** | [@ylecun](https://x.com/ylecun) | Meta 首席 AI 科学家，图灵奖 | 观点鲜明，经常跟人辩论 | 是 |
+| **Demis Hassabis** | [@demaborishassabis](https://x.com/demishassabis) | Google DeepMind CEO，诺贝尔奖 | 前沿研究突破 | 是 |
+| **Jim Fan** | [@DrJimFan](https://x.com/DrJimFan) | NVIDIA 研究经理 | 具身 AI / Agent / 多模态，解读深入且易懂 | 是 |
+
+### AI 实践派（企业应用视角）
+
+| 人物 | 账号 | 身份 | 为什么要关注 | 需翻墙 |
+|------|------|------|-------------|--------|
+| **Ethan Mollick** | [@emollick](https://x.com/emollick) | 沃顿商学院教授 | **老板必关注**。AI 对工作 / 教育 / 组织的实际影响，企业应用视角 | 是 |
+| **Simon Willison** | [@simonw](https://x.com/simonw) | Django 联合创始人 | LLM 实际使用经验，信号噪声比极高 | 是 |
+| **Elvis Saravia** | [@omarsar0](https://x.com/omarsar0) | DAIR.AI 创始人 | 提示词工程指南作者（72K stars），论文解读 | 是 |
+| **swyx** | [@swyx](https://x.com/swyx) | AI Engineer 大会创始人 | AI 工程实践、行业趋势、创业 | 是 |
+
+### 中文 X 账号（强烈推荐）
+
+| 博主 | 账号 | 为什么要关注 | 适合谁 |
+|------|------|-------------|--------|
+| **宝玉** | [@dotey](https://x.com/dotey) | **中文 AI 信息质量最高的账号之一**。LLM 课程翻译、Prompt 学习、行业一手资讯。被称为"大模型野生中文文档组组长" | 老板/运营 |
+| **归藏** | [@op7418](https://x.com/op7418) | AI 绘画 / AI 视频生成，每周 AIGC 周刊，视觉 AI 领域首选 | 运营/设计 |
+| **小互** | [@imxiaohu](https://x.com/imxiaohu) | 每天大量 AI 新闻和工具资讯，更新极其频繁 | 所有人 |
+| **向阳乔木** | [@vista8](https://x.com/vista8) | AI 产品工作流、Vibe Coding、趋势判断，兼具产品感和表达力 | 老板/运营 |
+
+::: tip 最低限度
+只关注一个选 **宝玉 @dotey**（中文信息质量最高）。想看英文一手动态加 **Ethan Mollick @emollick**（企业 AI 应用第一人）。
+:::
+
+---
+
+## 第七梯队：B 站 / 抖音 AI 博主（中文视频）
+
+不翻墙就能看，适合碎片时间。
+
+### B 站
+
+| UP 主 | 粉丝数 | 为什么要看 | 适合谁 |
+|--------|--------|-----------|--------|
+| **Genji是真想教会你** | 百万级 | **强烈推荐**。系统化 AI 教学，如《90 分钟会用 AI》，喂饭级教程 | 老板/运营 |
+| **秋葉aaaki** | ~100 万 | "国内推广 SD 第一人"，AI 绘画整合包 + 模型推荐 | 运营/设计 |
+| **林亦LYi** | 300 万（全网） | AI 科普短视频，全网超 3 亿播放 | 所有人 |
+| **图灵的猫** | 百万级 | 用 AI 做各种有趣事，创意型内容 | 所有人 |
+| **老麦的工具库** | 数十万 | 效率工具 + AI 工具实操分享 | 运营/老板 |
+| **跟李沐学AI** | 数十万 | 亚马逊首席科学家，论文精讲 | 技术 |
+| **Nenly同学** | 数万 | AIGC 工作流 + 新产品介绍 | 运营/技术 |
+
+### 抖音
+
+| 博主 | 粉丝数 | 为什么要看 | 适合谁 |
+|------|--------|-----------|--------|
+| **林亦LYi** | 百万级 | AI 科普短视频，通俗易懂 | 所有人 |
+| **认知便利店M!** | ~115 万 | AI + 经济学科普，AI 生成画面 + 犀利观点 | 老板 |
+
+::: tip 最低限度
+只看一个选 **Genji是真想教会你**（B 站最系统的 AI 教学）。
+:::
+
+---
+
+## 第八梯队：论文追踪（技术团队用）
 
 如果你有技术团队，让他们关注这些：
 
