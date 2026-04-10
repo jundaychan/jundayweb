@@ -60,7 +60,13 @@
 
 记住这个结构，所有产品图提示词都是这5个要素的排列组合。
 
+::: tip 以下示例图片全部由 Nano Banana 生成
+来源：[Philipp Schmid 10步法](https://www.philschmid.de/gemini-image-generation-product)，展示同一款运动鞋在不同提示词下的效果差异。
+:::
+
 ### 白底主图（电商必备）
+
+<img src="https://cdn.junday.net/images/nano-banana/ad_template.jpg" alt="Nano Banana 生成的白底产品图" style="max-width: 480px; border-radius: 8px; margin: 16px 0;" />
 
 ```
 Ultra-realistic studio photograph of [你的产品] on a pure white 
@@ -76,6 +82,8 @@ no text, square 1:1 composition
 
 ### 45度角产品展示
 
+<img src="https://cdn.junday.net/images/nano-banana/master.jpg" alt="Nano Banana 生成的45度角产品图" style="max-width: 480px; border-radius: 8px; margin: 16px 0;" />
+
 ```
 Professional product photograph of [你的产品], three-quarter 
 view at 45-degree angle from slightly above, on a seamless light 
@@ -85,12 +93,36 @@ with subtle fill light from right, f/5.6 for slight depth of field
 
 ### 生活场景（场景图）
 
+<img src="https://cdn.junday.net/images/nano-banana/lifestyle.jpg" alt="Nano Banana 生成的运动生活场景图" style="max-width: 480px; border-radius: 8px; margin: 16px 0;" />
+
 ```
 Lifestyle product photography of [你的产品] in a [现代厨房 / 
 极简客厅 / 温馨卧室], natural window light from the left side, 
 product placed on [木桌 / 大理石台面 / 亚麻布面], surrounded by 
 [2-3个配套道具], shallow depth of field f/2.8 with product in 
 sharp focus, warm color temperature 5500K
+```
+
+### 微距细节特写
+
+<img src="https://cdn.junday.net/images/nano-banana/macro.jpg" alt="Nano Banana 生成的微距细节图" style="max-width: 480px; border-radius: 8px; margin: 16px 0;" />
+
+```
+Extreme close-up macro photograph of [你的产品], focusing on 
+[面料纹理 / 表面工艺 / 材质细节], shallow depth of field f/2.8, 
+studio lighting highlighting texture and craftsmanship, 
+professional product detail shot
+```
+
+### 开箱 / 包装全家福
+
+<img src="https://cdn.junday.net/images/nano-banana/unboxing.jpg" alt="Nano Banana 生成的开箱包装图" style="max-width: 480px; border-radius: 8px; margin: 16px 0;" />
+
+```
+Overhead flat-lay unboxing photograph of [你的产品] with its 
+packaging, box, accessories and included items neatly arranged 
+on a clean light gray background, organized layout, soft even 
+lighting, premium unboxing experience feel
 ```
 
 ### 护肤品 / 美妆
@@ -132,22 +164,26 @@ lighting creating soft shadows, steam rising if applicable, vibrant
 colors, sharp focus, professional food styling
 ```
 
-### 服装（无模特 / Ghost Mannequin）
-
-```
-Clean e-commerce product photo of [你的衣服描述]. Remove the 
-model's body completely. Keep the outfit in natural 3D shape, 
-with realistic fabric folds and textures. Centered on a pure 
-white background. High-resolution, professional lighting
-```
-
 ### 服装（模特场景）
+
+<img src="https://cdn.junday.net/images/nano-banana/in_use.jpg" alt="Nano Banana 生成的模特穿搭图" style="max-width: 480px; border-radius: 8px; margin: 16px 0;" />
 
 ```
 Show a [Asian female / male] model wearing this [产品] in a 
 [现代都市街道 / 影棚 / 咖啡馆] setting, natural daylight, candid 
 pose, warm golden hour lighting, f/3.5 natural background 
 separation, clean e-commerce lookbook style
+```
+
+### UGC 风格（用户视角）
+
+<img src="https://cdn.junday.net/images/nano-banana/ugc.jpg" alt="Nano Banana 生成的UGC风格图" style="max-width: 480px; border-radius: 8px; margin: 16px 0;" />
+
+```
+Casual user-generated content style photo of [你的产品] in 
+real-life setting, shot from first-person perspective, natural 
+ambient lighting, slightly imperfect composition, authentic and 
+relatable feel, smartphone photography aesthetic
 ```
 
 ### 数码 / 3C 产品
@@ -159,6 +195,8 @@ background, modern minimalist tech aesthetic
 ```
 
 ### 产品色彩变体展示
+
+<img src="https://cdn.junday.net/images/nano-banana/lineup.jpg" alt="Nano Banana 生成的色彩变体展示图" style="max-width: 480px; border-radius: 8px; margin: 16px 0;" />
 
 ```
 Product color variant display of [你的产品] in [白色, 黑色, 

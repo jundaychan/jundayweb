@@ -406,3 +406,15 @@
 code, pre, pre *, img, svg, video, canvas {
   transition: none !important;
 }
+
+/* 不干扰 VitePress 内置组件的动画（侧边栏、导航栏、遮罩层） */
+.VPSidebar,
+.VPSidebar *,
+.VPNavBar .curtain,
+.VPNavScreenMenuLink,
+.VPNavScreen,
+.VPNavScreen *,
+.VPLocalNav,
+.VPLocalNav * {
+  transition-property: all !important;
+}
