@@ -168,6 +168,7 @@ export default defineConfig({
           { text: '信息源推荐', link: '/sources' },
         ],
       },
+      { text: '付费咨询', link: '/consulting' },
       { text: '关于', link: '/about' },
     ],
 
