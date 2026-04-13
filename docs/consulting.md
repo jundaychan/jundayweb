@@ -241,8 +241,7 @@ description: 5000元/小时，一对一帮你规划企业AI架构、选型落地
 }
 
 .cta-section .qr-wrapper img {
-  width: 200px;
-  height: 200px;
+  max-width: 240px;
   display: block;
 }
 
