@@ -32,7 +32,8 @@
 
 **怎么上手**：去腾讯云官网下载 Windows / macOS 安装包，按向导装好，首次启动授权访问文件夹即可。
 
-> **指南**：[WorkBuddy 使用指南：腾讯 AI Agent 如何接入微信、飞书、钉钉、企微、QQ](https://cloud.tencent.com/developer/article/2638410)（腾讯云开发者社区）
+> 📖 **看完整指南** → [腾讯 WorkBuddy 完全上手指南](/tools/workbuddy-guide)（安装、接入微信/飞书/钉钉、典型场景、安全提醒）
+> 原始出处：[WorkBuddy 使用指南（腾讯云开发者社区）](https://cloud.tencent.com/developer/article/2638410)
 
 ::: warning 安全提醒
 执行型 Agent 能读写你的本地文件、操作电脑。授权访问的文件夹**只给它该看的**，别一上来就把整个 D 盘的资料都开放。重要数据先在隔离的测试文件夹里跑通再说。
@@ -54,7 +55,8 @@
 
 **怎么上手**：
 
-> **指南**：[Codex 中文完全教程](https://github.com/xianyu110/gpt-codex)（作者 MaynorAI，2026 年更新）——**专门为国内用户和编程小白写的**，从安装、核心概念到实战方法论，9 大主题 + 速查卡，是目前最友好的中文入门资料。
+> 📖 **看完整指南** → [Codex 完全上手指南](/tools/codex-guide)（获取方式、项目/线程、Plan 模式、实战习惯）
+> 原始出处：[gpt-codex 中文教程（MaynorAI，2026 更新）](https://github.com/xianyu110/gpt-codex)——专为国内用户和编程小白写的，含完整操作截图。
 
 ---
 
@@ -74,8 +76,8 @@
 
 **怎么上手**：
 
-> **官方**：[Claude Code 产品页](https://www.anthropic.com/product/claude-code) · [官方文档](https://code.claude.com/docs/en/overview) · [GitHub](https://github.com/anthropics/claude-code)
-> **中文指南**：[claude-code-guide（国内如何使用 + 最易懂教学）](https://github.com/claude-code-chinese/claude-code-guide)
+> 📖 **看完整指南** → [Claude Code 完全上手指南](/tools/claude-code-guide)（国内怎么用、三条核心心法、CLAUDE.md）
+> 原始出处：[官方文档](https://code.claude.com/docs/en/overview) · [claude-code-guide 中文指南](https://github.com/claude-code-chinese/claude-code-guide)
 
 ---
 

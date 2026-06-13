@@ -1,0 +1,29 @@
+<svg viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="cx" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d97757"/><stop offset="1" stop-color="#c96442"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1000" height="200" fill="#f5f4ed"/>
+  <text x="500" y="24" fill="#5e5d59" font-size="13" font-weight="600" text-anchor="middle">Codex 的两层结构：一个项目，多个独立线程</text>
+
+  <!-- 外层：项目文件夹 -->
+  <rect x="20" y="40" width="960" height="142" rx="16" fill="#efe7df" stroke="#c96442" stroke-width="2"/>
+  <text x="44" y="68" fill="#7a5a48" font-size="15" font-weight="700">📁 项目文件夹（Project）= 一个具体的活，比如“公司官网”</text>
+
+  <!-- 内层：三个线程 -->
+  <g>
+    <rect x="44"  y="84" width="290" height="82" rx="12" fill="url(#cx)"/>
+    <text x="189" y="120" fill="#fff" font-size="16" font-weight="700" text-anchor="middle">线程 Thread 1</text>
+    <text x="189" y="144" fill="#f7e9e2" font-size="12.5" text-anchor="middle">改首页 banner</text>
+
+    <rect x="355" y="84" width="290" height="82" rx="12" fill="url(#cx)"/>
+    <text x="500" y="120" fill="#fff" font-size="16" font-weight="700" text-anchor="middle">线程 Thread 2</text>
+    <text x="500" y="144" fill="#f7e9e2" font-size="12.5" text-anchor="middle">加一个联系表单</text>
+
+    <rect x="666" y="84" width="290" height="82" rx="12" fill="url(#cx)"/>
+    <text x="811" y="120" fill="#fff" font-size="16" font-weight="700" text-anchor="middle">线程 Thread 3</text>
+    <text x="811" y="144" fill="#f7e9e2" font-size="12.5" text-anchor="middle">修一个显示 bug</text>
+  </g>
+  <text x="500" y="196" fill="#87867f" font-size="12" text-anchor="middle">每个线程是一段独立对话，各管一件事、互不干扰；做完一件就开新线程，别把所有事堆在一个对话里。</text>
+</svg>

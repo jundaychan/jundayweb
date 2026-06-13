@@ -365,6 +365,9 @@ export default defineConfig({
             { text: 'AI视频工具', link: '/tools/video' },
             { text: 'AI客服工具', link: '/tools/service' },
             { text: '执行型 Agent', link: '/tools/coding-agents' },
+            { text: '· Codex 指南', link: '/tools/codex-guide' },
+            { text: '· Claude Code 指南', link: '/tools/claude-code-guide' },
+            { text: '· WorkBuddy 指南', link: '/tools/workbuddy-guide' },
           ],
         },
         {
@@ -389,6 +392,9 @@ export default defineConfig({
             { text: 'AI视频工具', link: '/tools/video' },
             { text: 'AI客服工具', link: '/tools/service' },
             { text: '执行型 Agent', link: '/tools/coding-agents' },
+            { text: '· Codex 指南', link: '/tools/codex-guide' },
+            { text: '· Claude Code 指南', link: '/tools/claude-code-guide' },
+            { text: '· WorkBuddy 指南', link: '/tools/workbuddy-guide' },
           ],
         },
         {

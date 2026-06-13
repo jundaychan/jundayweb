@@ -1,0 +1,44 @@
+<svg viewBox="0 0 1000 158" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="wb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d97757"/><stop offset="1" stop-color="#c96442"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1000" height="158" fill="#f5f4ed"/>
+  <g>
+    <!-- 5 steps -->
+    <g>
+      <rect x="10"  y="34" width="158" height="86" rx="13" fill="url(#wb)"/>
+      <text x="89"  y="74" fill="#fff" font-size="19" font-weight="700" text-anchor="middle">① 下指令</text>
+      <text x="89"  y="99" fill="#f7e9e2" font-size="12.5" text-anchor="middle">一句话说清要做啥</text>
+    </g>
+    <g>
+      <rect x="218" y="34" width="158" height="86" rx="13" fill="url(#wb)"/>
+      <text x="297" y="74" fill="#fff" font-size="19" font-weight="700" text-anchor="middle">② 拆解</text>
+      <text x="297" y="99" fill="#f7e9e2" font-size="12.5" text-anchor="middle">AI 自动拆成步骤</text>
+    </g>
+    <g>
+      <rect x="426" y="34" width="158" height="86" rx="13" fill="url(#wb)"/>
+      <text x="505" y="74" fill="#fff" font-size="19" font-weight="700" text-anchor="middle">③ 读资料</text>
+      <text x="505" y="99" fill="#f7e9e2" font-size="12.5" text-anchor="middle">读本地文件夹</text>
+    </g>
+    <g>
+      <rect x="634" y="34" width="158" height="86" rx="13" fill="url(#wb)"/>
+      <text x="713" y="74" fill="#fff" font-size="19" font-weight="700" text-anchor="middle">④ 执行</text>
+      <text x="713" y="99" fill="#f7e9e2" font-size="12.5" text-anchor="middle">多 Agent 并行干</text>
+    </g>
+    <g>
+      <rect x="842" y="34" width="148" height="86" rx="13" fill="#141413"/>
+      <text x="916" y="71" fill="#fff" font-size="19" font-weight="700" text-anchor="middle">⑤ 产出</text>
+      <text x="916" y="96" fill="#cfc9bd" font-size="11.5" text-anchor="middle">PPT·Word·Excel</text>
+    </g>
+    <!-- arrows -->
+    <g fill="#c96442">
+      <path d="M180 77 l24 0 l0 -6 l12 9 l-12 9 l0 -6 l-24 0 z"/>
+      <path d="M388 77 l24 0 l0 -6 l12 9 l-12 9 l0 -6 l-24 0 z"/>
+      <path d="M596 77 l24 0 l0 -6 l12 9 l-12 9 l0 -6 l-24 0 z"/>
+      <path d="M804 77 l24 0 l0 -6 l12 9 l-12 9 l0 -6 l-24 0 z"/>
+    </g>
+    <text x="500" y="20" fill="#5e5d59" font-size="13" font-weight="600" text-anchor="middle">WorkBuddy：从一句话到办公成果</text>
+  </g>
+</svg>

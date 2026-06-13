@@ -1,0 +1,34 @@
+<svg viewBox="0 0 1000 188" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="cc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d97757"/><stop offset="1" stop-color="#c96442"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1000" height="188" fill="#f5f4ed"/>
+  <text x="500" y="22" fill="#5e5d59" font-size="13" font-weight="600" text-anchor="middle">Claude Code 的正确姿势：先规划，再动手</text>
+  <g>
+    <rect x="14"  y="40" width="216" height="80" rx="13" fill="url(#cc)"/>
+    <text x="122" y="76" fill="#fff" font-size="18" font-weight="700" text-anchor="middle">① 提需求</text>
+    <text x="122" y="100" fill="#f7e9e2" font-size="12.5" text-anchor="middle">说清你要什么</text>
+
+    <rect x="270" y="40" width="216" height="80" rx="13" fill="#141413"/>
+    <text x="378" y="76" fill="#fff" font-size="18" font-weight="700" text-anchor="middle">② Plan 模式</text>
+    <text x="378" y="100" fill="#cfc9bd" font-size="12.5" text-anchor="middle">只规划，先不动手</text>
+
+    <rect x="526" y="40" width="216" height="80" rx="13" fill="url(#cc)"/>
+    <text x="634" y="76" fill="#fff" font-size="18" font-weight="700" text-anchor="middle">③ 你确认</text>
+    <text x="634" y="100" fill="#f7e9e2" font-size="12.5" text-anchor="middle">方案对了再放行</text>
+
+    <rect x="782" y="40" width="204" height="80" rx="13" fill="url(#cc)"/>
+    <text x="884" y="76" fill="#fff" font-size="18" font-weight="700" text-anchor="middle">④ 执行 + 检查</text>
+    <text x="884" y="100" fill="#f7e9e2" font-size="12.5" text-anchor="middle">写代码·跑测试·迭代</text>
+
+    <g fill="#c96442">
+      <path d="M242 80 l12 0 l0 -6 l12 9 l-12 9 l0 -6 l-12 0 z"/>
+      <path d="M498 80 l12 0 l0 -6 l12 9 l-12 9 l0 -6 l-12 0 z"/>
+      <path d="M754 80 l12 0 l0 -6 l12 9 l-12 9 l0 -6 l-12 0 z"/>
+    </g>
+  </g>
+  <rect x="14" y="138" width="972" height="38" rx="10" fill="#efe7df" stroke="#e3d6cc"/>
+  <text x="34" y="162" fill="#7a5a48" font-size="13.5">心法：长对话用 <tspan font-family="ui-monospace,monospace" fill="#c96442" font-weight="700">/clear</tspan> 重置、<tspan font-family="ui-monospace,monospace" fill="#c96442" font-weight="700">/compact</tspan> 压缩；给项目放一份 <tspan font-family="ui-monospace,monospace" fill="#c96442" font-weight="700">CLAUDE.md</tspan> 当“项目说明书”，它每次都会先读。</text>
+</svg>
