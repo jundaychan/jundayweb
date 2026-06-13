@@ -2,6 +2,8 @@
 
 > Claude Code 是 Anthropic（Claude 那家公司）出品的编程 AI，被很多程序员认为是目前**编程能力最强**的工具。它的玩法比 Codex 更"硬核"一点，需要在电脑上敲几行命令。这篇把每一步都拆给完全不懂技术的人看。
 
+<img src="/images/guides/logo-anthropic.svg" alt="Anthropic" style="height:26px;margin:8px 0" /><br><sub>Claude Code 由 Anthropic 出品（上方为其官方标识，仅用于指代该产品）</sub>
+
 ::: warning 这篇适合谁?（先看一眼，省得白读）
 - **愿意折腾一点、想要最强效果** → 往下读。
 - **完全不想碰技术、只想处理 Word/Excel/PPT** → 别为难自己，直接去看 [腾讯 WorkBuddy 指南](/tools/workbuddy-guide)（国内直接装、不用命令）。
