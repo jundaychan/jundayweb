@@ -1,0 +1,32 @@
+<svg viewBox="0 0 920 160" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="cci" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d97757"/><stop offset="1" stop-color="#c96442"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="920" height="160" fill="#f5f4ed"/>
+  <text x="460" y="24" fill="#5e5d59" font-size="14" font-weight="600" text-anchor="middle">Claude Code 安装四步（国内）</text>
+  <g>
+    <rect x="14"  y="40" width="200" height="84" rx="13" fill="url(#cci)"/>
+    <text x="114" y="74" fill="#fff" font-size="17" font-weight="700" text-anchor="middle">① 装环境</text>
+    <text x="114" y="98" fill="#f7e9e2" font-size="12.5" text-anchor="middle">Node.js 等(一键脚本)</text>
+
+    <rect x="240" y="40" width="200" height="84" rx="13" fill="url(#cci)"/>
+    <text x="340" y="74" fill="#fff" font-size="17" font-weight="700" text-anchor="middle">② 装 Claude Code</text>
+    <text x="340" y="98" fill="#f7e9e2" font-size="12.5" text-anchor="middle">用 npm 安装</text>
+
+    <rect x="466" y="40" width="200" height="84" rx="13" fill="url(#cci)"/>
+    <text x="566" y="74" fill="#fff" font-size="17" font-weight="700" text-anchor="middle">③ 验证</text>
+    <text x="566" y="98" fill="#f7e9e2" font-size="12.5" text-anchor="middle">能显示版本号即成功</text>
+
+    <rect x="692" y="40" width="214" height="84" rx="13" fill="#141413"/>
+    <text x="799" y="74" fill="#fff" font-size="17" font-weight="700" text-anchor="middle">④ 填配置</text>
+    <text x="799" y="98" fill="#cfc9bd" font-size="12.5" text-anchor="middle">API key + 中转地址</text>
+
+    <g fill="#c96442">
+      <path d="M222 82 l6 0 l0 -6 l12 9 l-12 9 l0 -6 l-6 0 z"/>
+      <path d="M448 82 l6 0 l0 -6 l12 9 l-12 9 l0 -6 l-6 0 z"/>
+      <path d="M674 82 l6 0 l0 -6 l12 9 l-12 9 l0 -6 l-6 0 z"/>
+    </g>
+  </g>
+</svg>

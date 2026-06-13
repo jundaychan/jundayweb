@@ -1,0 +1,28 @@
+<svg viewBox="0 0 920 190" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="cax" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d97757"/><stop offset="1" stop-color="#c96442"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="920" height="190" fill="#f5f4ed"/>
+  <text x="460" y="26" fill="#5e5d59" font-size="14" font-weight="600" text-anchor="middle">获取 Codex 的三种方式</text>
+
+  <g>
+    <rect x="20"  y="46" width="280" height="118" rx="14" fill="url(#cax)"/>
+    <text x="160" y="86"  fill="#fff" font-size="18" font-weight="700" text-anchor="middle">官网订阅</text>
+    <text x="160" y="114" fill="#f7e9e2" font-size="13" text-anchor="middle">订阅 ChatGPT 付费套餐</text>
+    <text x="160" y="134" fill="#f7e9e2" font-size="13" text-anchor="middle">需自备网络与海外支付</text>
+  </g>
+  <g>
+    <rect x="320" y="46" width="280" height="118" rx="14" fill="url(#cax)"/>
+    <text x="460" y="86"  fill="#fff" font-size="18" font-weight="700" text-anchor="middle">第三方中转</text>
+    <text x="460" y="114" fill="#f7e9e2" font-size="13" text-anchor="middle">用国内中转 API</text>
+    <text x="460" y="134" fill="#f7e9e2" font-size="13" text-anchor="middle">不用自己折腾网络</text>
+  </g>
+  <g>
+    <rect x="620" y="46" width="280" height="118" rx="14" fill="#141413"/>
+    <text x="760" y="86"  fill="#fff" font-size="18" font-weight="700" text-anchor="middle">cc-switch 工具</text>
+    <text x="760" y="114" fill="#cfc9bd" font-size="13" text-anchor="middle">在多渠道间灵活切换</text>
+    <text x="760" y="134" fill="#cfc9bd" font-size="13" text-anchor="middle">适合进阶用户</text>
+  </g>
+</svg>

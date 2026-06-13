@@ -14,6 +14,8 @@
 
 Claude Code 在中国大陆无法直接访问。国内最常见的上手方式是**用 API 代理站**：注册一个国内中转服务，拿到 API key 和接入地址，填进配置里即可。对新手，这是绕过限制最省事的路子。
 
+![Claude Code 安装四步](/images/guides/claude-code-install.svg)
+
 **大致安装流程**（Mac / Windows / Linux 都支持）：
 
 1. 装好运行环境（Node.js 等基础组件，一键脚本能帮你搞定）
