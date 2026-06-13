@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 付费咨询 — 企业级 AI 搭建
-description: 5000元/小时，一对一帮你规划企业AI架构、选型落地、避坑指南
+description: 1万元/小时起，一对一帮你规划企业AI架构、选型落地、避坑指南
 ---
 
 <style>
@@ -286,7 +286,7 @@ description: 5000元/小时，一对一帮你规划企业AI架构、选型落地
 </div>
 
 <div class="price-card">
-  <div class="price">5,000<span class="price-unit"> 元/小时</span></div>
+  <div class="price">1万<span class="price-unit"> 元/小时起</span></div>
   <p class="price-note">线上视频/语音，按小时计费，不满一小时按一小时算</p>
 </div>
 
