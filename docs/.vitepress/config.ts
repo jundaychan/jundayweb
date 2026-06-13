@@ -66,6 +66,7 @@ export default defineConfig({
               { text: 'AI作图工具', link: '/tools/image' },
               { text: 'AI视频工具', link: '/tools/video' },
               { text: 'AI客服工具', link: '/tools/service' },
+              { text: '执行型 Agent', link: '/tools/coding-agents' },
             ],
           },
           {
@@ -363,6 +364,7 @@ export default defineConfig({
             { text: 'AI作图工具', link: '/tools/image' },
             { text: 'AI视频工具', link: '/tools/video' },
             { text: 'AI客服工具', link: '/tools/service' },
+            { text: '执行型 Agent', link: '/tools/coding-agents' },
           ],
         },
         {
@@ -386,6 +388,7 @@ export default defineConfig({
             { text: 'AI作图工具', link: '/tools/image' },
             { text: 'AI视频工具', link: '/tools/video' },
             { text: 'AI客服工具', link: '/tools/service' },
+            { text: '执行型 Agent', link: '/tools/coding-agents' },
           ],
         },
         {
