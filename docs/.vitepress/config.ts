@@ -6,11 +6,14 @@ export default defineConfig({
   description: '面向企业创始人的 AI 概念普及与实践指南',
 
   head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
     ['meta', { name: 'author', content: 'Junday' }],
     ['meta', { name: 'keywords', content: 'AI, 人工智能, 企业AI, 大语言模型, AI转型' }],
   ],
 
   themeConfig: {
+    logo: '/logo.svg',
+
     // 导航栏：按学习曲线排列
     // 对话 → 用现成能力 → 写Skill → Agent → 系统构建
     nav: [

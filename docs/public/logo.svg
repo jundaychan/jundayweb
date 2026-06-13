@@ -1,0 +1,23 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Junday AI">
+  <defs>
+    <linearGradient id="jd-bg" x1="6" y1="4" x2="58" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d97757"/>
+      <stop offset="0.55" stop-color="#c96442"/>
+      <stop offset="1" stop-color="#b3512f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 赤陶圆角徽章 -->
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="url(#jd-bg)"/>
+
+  <!-- J（Junday / 俊达） -->
+  <path d="M40 16 V38 a11 11 0 0 1 -22 0"
+        fill="none" stroke="#f7f4ec" stroke-width="9"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- AI 火花（思维迸发 / ENTP 的点子） -->
+  <path d="M49 5 C49 11.4 50.6 13 57 13 C50.6 13 49 14.6 49 21 C49 14.6 47.4 13 41 13 C47.4 13 49 11.4 49 5 Z"
+        fill="#fff"/>
+  <!-- 小火花点缀 -->
+  <circle cx="16.5" cy="46" r="2.6" fill="#f7d9cb"/>
+</svg>
