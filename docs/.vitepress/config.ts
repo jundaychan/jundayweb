@@ -164,7 +164,7 @@ export default defineConfig({
       {
         text: 'AI 资讯',
         items: [
-          { text: 'AI 周报', link: '/digest' },
+          { text: 'AI 日报', link: '/digest/' },
           { text: '信息源推荐', link: '/sources' },
         ],
       },

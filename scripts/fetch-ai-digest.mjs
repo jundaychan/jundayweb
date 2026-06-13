@@ -3,20 +3,25 @@
 /**
  * AI 信息源自动抓取
  *
- * 零依赖、零 API key。从 RSS 源抓取最新文章，按关键词过滤，生成周报页面。
+ * 零依赖、零 API key。从 RSS 源抓取最新文章，按关键词过滤，生成每日 AI 日报。
+ *
+ * 每天生成一期，按日期归档到 docs/digest/YYYY-MM-DD.md，
+ * 并自动重建归档索引 docs/digest/index.md。
  *
  * 用法：
- *   node scripts/fetch-ai-digest.mjs            # 默认抓最近 7 天
- *   DIGEST_DAYS=14 node scripts/fetch-ai-digest.mjs  # 抓最近 14 天
+ *   node scripts/fetch-ai-digest.mjs            # 默认抓最近 2 天
+ *   DIGEST_DAYS=7 node scripts/fetch-ai-digest.mjs  # 抓最近 7 天
  */
 
-import { writeFileSync } from 'fs'
+import { writeFileSync, mkdirSync, readdirSync, existsSync } from 'fs'
 import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const DOCS_DIR = resolve(__dirname, '../docs')
-const DIGEST_DAYS = parseInt(process.env.DIGEST_DAYS || '7', 10)
+const DIGEST_DIR = resolve(DOCS_DIR, 'digest')
+// 每日抓最近 N 天（默认 2 天，覆盖夜间发布、避免漏抓）
+const DIGEST_DAYS = parseInt(process.env.DIGEST_DAYS || '2', 10)
 
 // ============================================================
 // 信源配置
@@ -245,7 +250,8 @@ async function main() {
   console.log(`🎯 关键词过滤后: ${scored.length} 篇\n`)
 
   if (scored.length === 0) {
-    console.log('没有匹配的文章，保留现有 digest.md 不更新。')
+    console.log('今天没有匹配的新文章，不生成新日报，仅重建索引。')
+    rebuildIndex()
     return
   }
 
@@ -261,15 +267,18 @@ async function main() {
   // 4. 生成 Markdown
   const now = new Date()
   const dateStr = fmt(now)
-  const weekAgoStr = fmt(cutoffDate)
 
   const allSources = [...RSS_SOURCES, ...WEB_SOURCES]
 
-  let md = `# AI 周报
+  let md = `---
+title: AI 日报 · ${dateStr}
+---
 
-> 每周自动从 ${allSources.map((s) => s.name).join('、')} 抓取，按关键词筛选与企业 AI 落地最相关的内容。
+# AI 日报 · ${dateStr}
 
-**本期**：${weekAgoStr} — ${dateStr} · 共 ${scored.length} 篇
+> 每天自动从 ${allSources.map((s) => s.name).join('、')} 抓取，按关键词筛选与企业 AI 落地最相关的内容。[← 返回归档](/digest/)
+
+**本期**：${dateStr} · 共 ${scored.length} 篇
 
 ---
 
@@ -310,10 +319,62 @@ async function main() {
 :::
 `
 
-  const outputPath = resolve(DOCS_DIR, 'digest.md')
+  if (!existsSync(DIGEST_DIR)) mkdirSync(DIGEST_DIR, { recursive: true })
+  const outputPath = resolve(DIGEST_DIR, `${dateStr}.md`)
   writeFileSync(outputPath, md, 'utf-8')
-  console.log(`✅ 周报已生成: docs/digest.md`)
+  console.log(`✅ 日报已生成: docs/digest/${dateStr}.md`)
   console.log(`   ${scored.length} 篇文章，${Object.keys(byCategory).length} 个分类`)
+
+  // 5. 重建归档索引
+  rebuildIndex()
+}
+
+/** 扫描 docs/digest 下所有日期页，重建归档索引 index.md（最新在前） */
+function rebuildIndex() {
+  if (!existsSync(DIGEST_DIR)) mkdirSync(DIGEST_DIR, { recursive: true })
+
+  const dates = readdirSync(DIGEST_DIR)
+    .filter((f) => /^\d{4}-\d{2}-\d{2}\.md$/.test(f))
+    .map((f) => f.replace(/\.md$/, ''))
+    .sort((a, b) => b.localeCompare(a)) // 新 → 旧
+
+  let md = `---
+title: AI 日报
+---
+
+# AI 日报
+
+> 每天早上 8 点自动从 OpenAI、Anthropic、Google DeepMind、Hugging Face、LangChain、n8n、量子位等信源抓取，按关键词筛选与企业 AI 落地最相关的内容。只收录带原文链接的真实文章，不做 AI 二次编写。
+
+`
+
+  if (dates.length === 0) {
+    md += `_暂无归档，明天早上 8 点见。_\n`
+  } else {
+    md += `## 历史归档\n\n`
+    let lastMonth = ''
+    for (const d of dates) {
+      const month = d.slice(0, 7) // YYYY-MM
+      if (month !== lastMonth) {
+        md += `\n### ${month.replace('-', ' 年 ')} 月\n\n`
+        lastMonth = month
+      }
+      md += `- [${d}](/digest/${d})\n`
+    }
+    md += '\n'
+  }
+
+  md += `\n::: info 关于这个页面
+由 [\`scripts/fetch-ai-digest.mjs\`](https://github.com/jundaychan/jundayweb/blob/main/scripts/fetch-ai-digest.mjs) 每天自动生成，通过 GitHub Actions 定时运行后 push 到仓库，触发 Cloudflare Pages 重新部署。
+
+想手动运行：\`npm run digest\`
+
+想了解更多信息源？→ [AI 信息源推荐](/sources)
+:::
+`
+
+  writeFileSync(resolve(DIGEST_DIR, 'index.md'), md, 'utf-8')
+  console.log(`✅ 归档索引已重建: docs/digest/index.md（共 ${dates.length} 期）`)
 }
 
 function fmt(d) {
