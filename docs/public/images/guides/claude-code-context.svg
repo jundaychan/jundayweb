@@ -1,0 +1,33 @@
+<svg viewBox="0 0 900 196" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif">
+  <rect x="0" y="0" width="900" height="196" fill="#f5f4ed"/>
+  <text x="450" y="26" fill="#5e5d59" font-size="14" font-weight="600" text-anchor="middle">管好上下文：别让对话越堆越糊涂</text>
+
+  <!-- 状态一：越堆越长 -->
+  <g>
+    <rect x="28" y="50" width="252" height="120" rx="13" fill="#fff" stroke="#e3d6cc"/>
+    <text x="154" y="74" fill="#7a5a48" font-size="13.5" font-weight="700" text-anchor="middle">对话越堆越长</text>
+    <rect x="48" y="86"  width="212" height="14" rx="5" fill="#e9c4b4"/>
+    <rect x="48" y="106" width="212" height="14" rx="5" fill="#e9c4b4"/>
+    <rect x="48" y="126" width="212" height="14" rx="5" fill="#e9c4b4"/>
+    <rect x="48" y="146" width="180" height="14" rx="5" fill="#e9c4b4"/>
+    <text x="154" y="166" fill="#b53333" font-size="11.5" text-anchor="middle">注意力被占满，开始犯糊涂</text>
+  </g>
+
+  <!-- 状态二：/compact -->
+  <g>
+    <rect x="324" y="50" width="252" height="120" rx="13" fill="#fff" stroke="#e3d6cc"/>
+    <text x="450" y="74" fill="#7a5a48" font-size="13.5" font-weight="700" text-anchor="middle"><tspan font-family="ui-monospace,monospace" fill="#c96442">/compact</tspan> 压缩</text>
+    <rect x="344" y="92" width="212" height="40" rx="8" fill="#c96442"/>
+    <text x="450" y="116" fill="#fff" font-size="12.5" text-anchor="middle">把关键决定压成摘要</text>
+    <text x="450" y="152" fill="#87867f" font-size="11.5" text-anchor="middle">留住重点，丢掉啰嗦</text>
+  </g>
+
+  <!-- 状态三：/clear -->
+  <g>
+    <rect x="620" y="50" width="252" height="120" rx="13" fill="#141413"/>
+    <text x="746" y="74" fill="#fff" font-size="13.5" font-weight="700" text-anchor="middle"><tspan font-family="ui-monospace,monospace" fill="#e8845c">/clear</tspan> 重置</text>
+    <rect x="640" y="92" width="212" height="40" rx="8" fill="#2c2b29"/>
+    <text x="746" y="116" fill="#cfc9bd" font-size="12.5" text-anchor="middle">干完一件事就清空</text>
+    <text x="746" y="152" fill="#a8a39a" font-size="11.5" text-anchor="middle">下一件事，干净开始</text>
+  </g>
+</svg>

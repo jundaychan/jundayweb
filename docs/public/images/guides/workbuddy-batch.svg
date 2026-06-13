@@ -1,0 +1,35 @@
+<svg viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="wbb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d97757"/><stop offset="1" stop-color="#c96442"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="900" height="200" fill="#f5f4ed"/>
+  <text x="450" y="26" fill="#5e5d59" font-size="14" font-weight="600" text-anchor="middle">WorkBuddy：读一个文件夹，批量出成果</text>
+
+  <!-- 文件夹 -->
+  <g>
+    <path d="M40 70 h70 l16 18 h114 a8 8 0 0 1 8 8 v62 a8 8 0 0 1 -8 8 h-200 a8 8 0 0 1 -8 -8 v-80 a8 8 0 0 1 8 -8 z" fill="#e7b48f"/>
+    <rect x="60" y="96" width="160" height="58" rx="6" fill="#efe7df"/>
+    <rect x="72" y="106" width="60" height="38" rx="4" fill="#fff" stroke="#e3d6cc"/>
+    <rect x="142" y="106" width="60" height="38" rx="4" fill="#fff" stroke="#e3d6cc"/>
+    <text x="140" y="178" fill="#7a5a48" font-size="12.5" text-anchor="middle">一堆杂乱的资料文件</text>
+  </g>
+
+  <!-- WorkBuddy -->
+  <rect x="350" y="78" width="200" height="74" rx="14" fill="url(#wbb)"/>
+  <text x="450" y="112" fill="#fff" font-size="17" font-weight="700" text-anchor="middle">WorkBuddy</text>
+  <text x="450" y="134" fill="#f7e1d6" font-size="12" text-anchor="middle">读取 + 自动处理</text>
+
+  <!-- 产出 -->
+  <g>
+    <rect x="640" y="60" width="220" height="30" rx="7" fill="#fff" stroke="#c96442"/><text x="660" y="80" fill="#c96442" font-size="13" font-weight="600">Excel 汇总表</text>
+    <rect x="640" y="100" width="220" height="30" rx="7" fill="#fff" stroke="#c96442"/><text x="660" y="120" fill="#c96442" font-size="13" font-weight="600">Word 汇总报告</text>
+    <rect x="640" y="140" width="220" height="30" rx="7" fill="#fff" stroke="#c96442"/><text x="660" y="160" fill="#c96442" font-size="13" font-weight="600">PPT / PDF</text>
+  </g>
+
+  <g fill="#c96442">
+    <path d="M300 114 l24 0 l0 -6 l12 9 l-12 9 l0 -6 l-24 0 z"/>
+    <path d="M566 114 l24 0 l0 -6 l12 9 l-12 9 l0 -6 l-24 0 z"/>
+  </g>
+</svg>

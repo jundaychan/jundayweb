@@ -1,0 +1,33 @@
+<svg viewBox="0 0 900 190" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="sk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d97757"/><stop offset="1" stop-color="#c96442"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="900" height="190" fill="#f5f4ed"/>
+  <text x="450" y="26" fill="#5e5d59" font-size="14" font-weight="600" text-anchor="middle">Skills：把常用做法打包，下次一句话复用</text>
+
+  <!-- 重复交代的步骤 -->
+  <g>
+    <rect x="28" y="52" width="222" height="108" rx="13" fill="#efe7df" stroke="#e3d6cc"/>
+    <text x="139" y="76" fill="#7a5a48" font-size="13" font-weight="700" text-anchor="middle">每次都要重新交代</text>
+    <rect x="48" y="86" width="182" height="22" rx="6" fill="#e2d3c8"/><text x="58" y="101" fill="#7a5a48" font-size="11.5">步骤一：先这样…</text>
+    <rect x="48" y="112" width="182" height="22" rx="6" fill="#e2d3c8"/><text x="58" y="127" fill="#7a5a48" font-size="11.5">步骤二：再那样…</text>
+    <rect x="48" y="138" width="182" height="14" rx="6" fill="#e2d3c8"/>
+  </g>
+
+  <!-- 打包 -->
+  <rect x="340" y="64" width="220" height="84" rx="13" fill="url(#sk)"/>
+  <text x="450" y="100" fill="#fff" font-size="17" font-weight="700" text-anchor="middle">打包成 Skill</text>
+  <text x="450" y="124" fill="#f7e9e2" font-size="12.5" text-anchor="middle">交代一次，存起来</text>
+
+  <!-- 一句话调用 -->
+  <rect x="650" y="64" width="222" height="84" rx="13" fill="#141413"/>
+  <text x="761" y="100" fill="#fff" font-size="17" font-weight="700" text-anchor="middle">一句话调用</text>
+  <text x="761" y="124" fill="#cfc9bd" font-size="12.5" text-anchor="middle">以后直接喊它名字</text>
+
+  <g fill="#c96442">
+    <path d="M258 106 l24 0 l0 -6 l12 9 l-12 9 l0 -6 l-24 0 z"/>
+    <path d="M568 106 l24 0 l0 -6 l12 9 l-12 9 l0 -6 l-24 0 z"/>
+  </g>
+</svg>
