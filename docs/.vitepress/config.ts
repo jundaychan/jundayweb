@@ -146,6 +146,7 @@ export default defineConfig({
               { text: '提效篇', link: '/ai-landing/productivity' },
               { text: '案例篇', link: '/ai-landing/cases' },
               { text: '避坑篇', link: '/ai-landing/pitfalls' },
+              { text: 'FDE篇', link: '/ai-landing/fde' },
             ],
           },
           {
@@ -523,6 +524,7 @@ export default defineConfig({
             { text: '提效篇', link: '/ai-landing/productivity' },
             { text: '案例篇', link: '/ai-landing/cases' },
             { text: '避坑篇', link: '/ai-landing/pitfalls' },
+            { text: 'FDE篇', link: '/ai-landing/fde' },
           ],
         },
         {
